@@ -35,16 +35,21 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+   /* Add transition to :root for CSS Variables */
 }
 
+/* Dark Mode Styles */
 body.dark-mode {
+  transition: background-color 150ms ease, color 150ms ease; /* Ensure body transition */
   --color-background: #121212;
   --color-text: #ffffff;
   --color-text-secondary: #aaaaaa;
   --color-border: #333333;
-  --color-primary: #bb86fc; /* A common dark mode primary color */
+  --color-primary: #bb86fc;
   --color-primary-hover: #3700b3;
   --color-tag-bg: #333333;
+  --color-tag-text: #ffffff;
   --color-input-bg: #333333;
   --color-input-border: #555555;
   --color-input-focus: #bb86fc;
@@ -53,11 +58,6 @@ body.dark-mode {
   --color-timeline-dot-bg: #121212;
   --color-badge-bg: #bb86fc;
   --color-badge-text: #ffffff;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
 }
 
 * {
@@ -76,6 +76,7 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+   /* VERY IMPORTANT: Add transition to body */
 }
 
 .app {
@@ -93,6 +94,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-4);
+   /* Add transition to container */
 }
 
 h1,
@@ -103,6 +105,7 @@ h5,
 h6 {
   line-height: 1.2;
   font-weight: 600;
+   /* Add transition to headings */
 }
 
 h1 {
@@ -122,20 +125,24 @@ h3 {
 
 p {
   margin-bottom: var(--space-4);
+   /* Add transition to paragraphs */
 }
 
 a {
   color: inherit;
   text-decoration: none;
+   /* Add transition to links */
 }
 
 section {
   padding: var(--space-10) 0;
+   /* Add transition to section */
 }
 
 .section-subtitle {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-6);
+   
 }
 
 .button {
@@ -154,6 +161,7 @@ section {
   background-color: var(--color-primary);
   color: white;
   border: none;
+   /* Add transition to primary button */
 }
 
 .button-primary:hover {
@@ -164,6 +172,7 @@ section {
   background-color: transparent;
   color: var(--color-text);
   border: 1px solid var(--color-border);
+   /* Add transition to outline button */
 }
 
 .button-outline:hover {
@@ -184,6 +193,7 @@ section {
   top: 0;
   background-color: var(--color-background);
   z-index: 100;
+   /* Add transition to header */
 }
 
 .header-container {
@@ -198,6 +208,7 @@ section {
   align-items: center;
   gap: var(--space-2);
   font-weight: 600;
+   /* Add transition to logo */
 }
 
 .nav-list {
@@ -236,28 +247,33 @@ section {
 .hero {
   padding-top: var(--space-10);
   padding-bottom: var(--space-10);
+   
 }
 
 .hero-container {
   display: flex;
   align-items: center;
   gap: var(--space-8);
+   
 }
 
 .hero-content {
   flex: 1;
+   
 }
 
 .hero h1 {
   font-size: 4.5rem;
   line-height: 1.1;
   margin-bottom: var(--space-4);
+   
 }
 
 .title {
   font-size: 2.5rem;
   display: block;
   margin-top: var(--space-2);
+   
 }
 
 .hero-description {
@@ -265,6 +281,7 @@ section {
   color: var(--color-text-secondary);
   max-width: 540px;
   margin-bottom: var(--space-5);
+  transition: color 50ms ease; 
 }
 
 .location {
@@ -273,11 +290,13 @@ section {
   gap: var(--space-2);
   color: var(--color-text-secondary);
   margin-bottom: var(--space-5);
+   
 }
 
 .hero-actions {
   display: flex;
   gap: var(--space-3);
+   
 }
 
 .hero-image {
@@ -285,6 +304,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+   
 }
 
 .profile-image {
@@ -292,6 +312,7 @@ section {
   height: 300px;
   border-radius: 50%;
   background-color: var(--color-border);
+   
 }
 
 .blob-frame {
@@ -304,11 +325,13 @@ section {
   align-items: center; /* Vertically center the content */
   justify-content: center; /* Horizontally center the content */
   align-self: center;
+   
 }
 
 .imageStyle { /* Corrected class name */
   max-width: 100%; /* Adjust the maximum width as needed */
   max-height: 100%; /* Adjust the maximum width as needed */
+   
 }
 
 /* Skills */
@@ -317,12 +340,14 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: var(--space-5);
   margin-top: var(--space-6);
+   
 }
 
 .skill-category {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-5);
+  
 }
 
 .skill-header {
@@ -330,12 +355,14 @@ section {
   align-items: center;
   gap: var(--space-3);
   margin-bottom: var(--space-4);
+  
 }
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
+  
 }
 
 .tag {
@@ -345,6 +372,7 @@ section {
   border-radius: 9999px;
   font-size: 0.8rem;
   font-weight: 500;
+  
 }
 
 /* Projects */
@@ -353,13 +381,13 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: var(--space-5);
   margin-top: var(--space-6);
+  
 }
 
 .project-card {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-5);
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
@@ -370,21 +398,25 @@ section {
 .project-description {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-3);
+  
 }
 
 .project-details {
   margin-bottom: var(--space-4);
+  
 }
 
 .project-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .project-technologies {
   display: flex;
   gap: var(--space-2);
+  
 }
 
 .tech-tag {
@@ -393,6 +425,7 @@ section {
   padding: var(--space-1) var(--space-2);
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
+  
 }
 
 .view-link {
@@ -401,6 +434,7 @@ section {
   gap: var(--space-1);
   font-size: 0.9rem;
   font-weight: 500;
+  
 }
 
 .view-link:hover {
@@ -412,6 +446,7 @@ section {
   position: relative;
   margin-top: var(--space-8);
   padding-left: var(--space-6);
+  
 }
 
 .timeline::before {
@@ -422,11 +457,13 @@ section {
   left: 7px;
   width: 2px;
   background-color: var(--color-timeline-line);
+  
 }
 
 .timeline-item {
   position: relative;
   margin-bottom: var(--space-8);
+  
 }
 
 .timeline-marker {
@@ -439,10 +476,12 @@ section {
   background-color: var(--color-timeline-dot);
   border: 3px solid var(--color-timeline-dot-bg);
   z-index: 1;
+  
 }
 
 .timeline-content {
   padding-bottom: var(--space-4);
+  
 }
 
 .role-header {
@@ -450,6 +489,7 @@ section {
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--space-1);
+  
 }
 
 .period-badge {
@@ -459,17 +499,20 @@ section {
   border-radius: var(--radius-sm);
   font-size: 0.8rem;
   font-weight: 500;
+  
 }
 
 .period {
   color: var(--color-text-secondary);
   font-size: 0.9rem;
+  
 }
 
 .company {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-3);
   font-weight: 500;
+  
 }
 
 /* Contact */
@@ -478,11 +521,13 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: var(--space-8);
   margin-top: var(--space-6);
+  
 }
 
 .contact-list {
   list-style: none;
   margin-top: var(--space-5);
+  
 }
 
 .contact-list li {
@@ -490,24 +535,29 @@ section {
   align-items: center;
   gap: var(--space-3);
   margin-bottom: var(--space-4);
+  
 }
 
 .contact-list a:hover {
   text-decoration: underline;
+  
 }
 
 .contact-form {
   margin-top: var(--space-5);
+  
 }
 
 .form-group {
   margin-bottom: var(--space-4);
+  
 }
 
 .form-group label {
   display: block;
   margin-bottom: var(--space-2);
   font-weight: 500;
+  
 }
 
 .form-group input,
@@ -519,12 +569,14 @@ section {
   background-color: var(--color-input-bg);
   font-family: inherit;
   font-size: 1rem;
+  
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--color-input-focus);
+  
 }
 
 /* Footer */
@@ -532,79 +584,95 @@ section {
   padding: var(--space-6) 0;
   border-top: 1px solid var(--color-border);
   margin-top: var(--space-10);
+  
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .footer-logo {
   display: flex;
   align-items: center;
   gap: var(--space-2);
+  
 }
 
 .copyright {
   color: var(--color-text-secondary);
   font-size: 0.9rem;
+  
 }
 
 .footer-social {
   display: flex;
   gap: var(--space-3);
+  
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
+    
   }
 
   .title {
     font-size: 2.5rem;
+    
   }
 
   .hero-container {
     flex-direction: column;
     text-align: center;
+    
   }
 
   .hero-description {
     margin-left: auto;
     margin-right: auto;
+    
   }
 
   .location {
     justify-content: center;
+    
   }
 
   .hero-actions {
     justify-content: center;
+    
   }
 
   .skills-grid {
     grid-template-columns: 1fr;
+    
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    
   }
 
   .contact-container {
     grid-template-columns: 1fr;
+    
   }
 
   .footer-container {
     flex-direction: column;
     gap: var(--space-4);
     text-align: center;
+    
   }
   .hero h1 {
     font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: var(--space-4);
+    
   }
 }
 
@@ -613,5 +681,6 @@ section {
     min-height: 80vh;
     display: flex;
     justify-content: center;
+    
   }
 }
