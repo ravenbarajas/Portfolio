@@ -37,6 +37,29 @@
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode {
+  --color-background: #121212;
+  --color-text: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  --color-border: #333333;
+  --color-primary: #bb86fc; /* A common dark mode primary color */
+  --color-primary-hover: #3700b3;
+  --color-tag-bg: #333333;
+  --color-input-bg: #333333;
+  --color-input-border: #555555;
+  --color-input-focus: #bb86fc;
+  --color-timeline-line: #333333;
+  --color-timeline-dot: #bb86fc;
+  --color-timeline-dot-bg: #121212;
+  --color-badge-bg: #bb86fc;
+  --color-badge-text: #ffffff;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -167,6 +190,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .logo {

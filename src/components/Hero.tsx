@@ -17,7 +17,7 @@ const Hero = () => {
               <span className="title">AI/ML Engineer</span>
             </h1>
             <p className="hero-description">
-              I build intelligent systems that solve real-world problems. Specializing in generative AI, data analytics,
+              I build intelligent and data-driven systems that solve real-world problems. Specializing in generative AI, data analytics,
               and software development.
             </p>
             <div className="location">

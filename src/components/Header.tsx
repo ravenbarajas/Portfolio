@@ -1,40 +1,27 @@
-import { Github } from "./icons/Github"
-import { Linkedin } from "./icons/Linkedin"
+import { useState } from 'react';
+import darkModeIcon from "../assets/lightMode.png"; // Import the dark mode PNG icon
+import lightModeIcon from "../assets/darkMode.png"; // Import the light mode PNG icon
 
 const Header = () => {
-  return (
-    <header className="header">
-      <div className="container header-container">
-        <div className="logo">
-        </div>
+  const [darkMode, setDarkMode] = useState(false);
 
-        <nav className="nav">
-          <ul className="nav-list">
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark-mode'); // Toggle a class on the body
+  };
+
+  return (
+    <header className={`header ${darkMode ? 'dark-mode' : ''}`}>
+      <div className="container header-container">
 
         <div className="social-links">
-          <a href="#" aria-label="Github">
-            <Github />
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <Linkedin />
-          </a>
+          <button style={{marginLeft: '10px', backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer'}} onClick={toggleDarkMode}>
+            <img
+              src={darkMode ? lightModeIcon : darkModeIcon}
+              alt={darkMode ? "Light Mode" : "Dark Mode"}
+              style={{ width: '24px', height: '24px' }} // Adjust size as needed
+            />
+          </button>
         </div>
       </div>
     </header>
