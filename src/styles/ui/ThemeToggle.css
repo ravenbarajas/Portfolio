@@ -1,0 +1,128 @@
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--muted);
+}
+
+.theme-toggle-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sun */
+.sun {
+  width: 16px;
+  height: 16px;
+  background-color: var(--foreground);
+  border-radius: 50%;
+  position: relative;
+}
+
+.sun-ray {
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  background-color: var(--foreground);
+  border-radius: 1px;
+}
+
+.sun-ray:nth-child(1) {
+  top: -8px;
+  left: 7px;
+}
+
+.sun-ray:nth-child(2) {
+  top: -6px;
+  right: -4px;
+  transform: rotate(45deg);
+}
+
+.sun-ray:nth-child(3) {
+  right: -8px;
+  top: 7px;
+  transform: rotate(90deg);
+}
+
+.sun-ray:nth-child(4) {
+  bottom: -6px;
+  right: -4px;
+  transform: rotate(135deg);
+}
+
+.sun-ray:nth-child(5) {
+  bottom: -8px;
+  left: 7px;
+  transform: rotate(180deg);
+}
+
+.sun-ray:nth-child(6) {
+  bottom: -6px;
+  left: -4px;
+  transform: rotate(225deg);
+}
+
+.sun-ray:nth-child(7) {
+  left: -8px;
+  top: 7px;
+  transform: rotate(270deg);
+}
+
+.sun-ray:nth-child(8) {
+  top: -6px;
+  left: -4px;
+  transform: rotate(315deg);
+}
+
+/* Moon */
+.moon {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 4px 0 0 0 var(--foreground);
+  position: relative;
+  overflow: hidden;
+}
+
+.moon-crater {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.moon-crater:nth-child(1) {
+  width: 4px;
+  height: 4px;
+  top: 3px;
+  left: 8px;
+}
+
+.moon-crater:nth-child(2) {
+  width: 3px;
+  height: 3px;
+  top: 8px;
+  left: 4px;
+}
+
+.moon-crater:nth-child(3) {
+  width: 2px;
+  height: 2px;
+  top: 10px;
+  left: 10px;
+}
+
