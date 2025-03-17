@@ -4,27 +4,35 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "NLP Sentiment Analyzer",
+      title: "Customer Sentiment Analyzer",
       description: "Real-time sentiment analysis for customer feedback",
       details:
-        "Built a BERT-based sentiment analysis model that achieved 94% accuracy on customer reviews, deployed as a real-time API.",
-      technologies: ["PyTorch", "BERT"],
+        "Analyzes customer feedback using NLP techniques, sentiment scoring models, and interactive dashboards.",
+      technologies: ["Python", "LangChain", "Scikit-learn", "FastAPI"],
     },
     {
       id: 2,
-      title: "Computer Vision for Healthcare",
-      description: "Medical image classification system",
+      title: "Enterprice HRMS",
+      description: "Comprehensive workforce management platforrm",
       details:
-        "Developed a CNN-based system for detecting abnormalities in X-ray images with 92% sensitivity and 89% specificity.",
-      technologies: ["TensorFlow", "CNN"],
+        "Manages employee profiles, attendance tracking, payroll, and HR analytics with an intuitive UI and role-based access control.",
+      technologies: ["React.js", "Laravel", "PostgreSQL", "Python"],
     },
     {
       id: 3,
-      title: "Recommendation Engine",
-      description: "Personalized content recommendation system",
+      title: "Procurement Management Sytem",
+      description: "Management system with real-time analytics",
       details:
-        "Created a hybrid recommendation system combining collaborative filtering and content-based approaches, increasing user engagement by 27%.",
-      technologies: ["Python", "Spark"],
+        "Tracks procurement processes, vendor contracts, and financial insights with real-time analytics and reporting tools.",
+      technologies: ["React.js", "Laravel", "MySQL", "Tableau"],
+    },
+    {
+      id: 4,
+      title: "Logistics Operations Dashboard",
+      description: "Centralized dashboard for Logistics and fleet management",
+      details:
+        "Monitors fleet performance, optimizes delivery routes, and provides cost analysis with interactive dashboards.",
+      technologies: ["React.js", "Flask", "PostgreSQL", "Pandas"],
     },
   ]
 

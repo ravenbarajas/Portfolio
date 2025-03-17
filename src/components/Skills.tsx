@@ -1,6 +1,6 @@
-import { Clock } from "./icons/Clock"
+import { BrainCircuit } from 'lucide-react';
 import { Code } from "./icons/Code"
-import { Brain } from "./icons/Brain"
+import { ChartSpline } from 'lucide-react';
 import { Web } from "./icons/Web"
 
 const Skills = () => {
@@ -13,59 +13,58 @@ const Skills = () => {
         <div className="skills-grid">
           <div className="skill-category">
             <div className="skill-header">
-              <Clock />
-              <h3>Machine Learning</h3>
+              <BrainCircuit />
+              <h3>AI & Machine Learning</h3>
             </div>
             <div className="skill-tags">
-              <span className="tag">TensorFlow</span>
+              <span className="tag">LangChain</span>
+              <span className="tag">Hugging Face Transformers</span>
+              <span className="tag">Open AI</span>
+              <span className="tag">MLflow</span>
+              <span className="tag">Scikit-learn</span>
               <span className="tag">PyTorch</span>
-              <span className="tag">scikit-learn</span>
-              <span className="tag">Keras</span>
-              <span className="tag">XGBoost</span>
+              <span className="tag">Databricks</span>
+              <span className="tag">FAISS</span>
             </div>
           </div>
 
           <div className="skill-category">
             <div className="skill-header">
-              <Brain />
-              <h3>Deep Learning</h3>
+              <ChartSpline  />
+              <h3>Data Analytics & Visualization</h3>
             </div>
             <div className="skill-tags">
-              <span className="tag">Neural Networks</span>
-              <span className="tag">CNN</span>
-              <span className="tag">RNN</span>
-              <span className="tag">Transformers</span>
-              <span className="tag">GANs</span>
+              <span className="tag">SQL/NOSQL</span>
+              <span className="tag">Python</span>
+              <span className="tag">Pandas</span>
+              <span className="tag">NumPy</span>
+              <span className="tag">Plotly</span>
+              <span className="tag">Seaborn</span>
+              <span className="tag">Matplotlib</span>
+              <span className="tag">Tableau</span>
             </div>
           </div>
 
           <div className="skill-category">
             <div className="skill-header">
               <Code />
-              <h3>Programming</h3>
+              <h3>Software Development</h3>
             </div>
             <div className="skill-tags">
-              <span className="tag">Python</span>
-              <span className="tag">R</span>
-              <span className="tag">SQL</span>
+              <span className="tag">React.js</span>
               <span className="tag">TypeScript</span>
-              <span className="tag">Julia</span>
+              <span className="tag">HTML</span>
+              <span className="tag">CSS</span>
+              <span className="tag">PHP</span>
+              <span className="tag">Flask</span>
+              <span className="tag">Laravel</span>
+              <span className="tag">FastAPI</span>
+              <span className="tag">RESTful APIs</span>
+              <span className="tag">MySQL</span>
+              <span className="tag">PostgreSQL</span>
             </div>
           </div>
 
-          <div className="skill-category">
-            <div className="skill-header">
-              <Web />
-              <h3>Web Development</h3>
-            </div>
-            <div className="skill-tags">
-              <span className="tag">React</span>
-              <span className="tag">Next.js</span>
-              <span className="tag">TypeScript</span>
-              <span className="tag">Tailwind CSS</span>
-              <span className="tag">Node.js</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
