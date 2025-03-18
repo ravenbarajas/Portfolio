@@ -48,17 +48,17 @@ body.dark-mode {
   --color-text: #ffffff;
   --color-text-secondary: #aaaaaa;
   --color-border: #333333;
-  --color-primary: #bb86fc;
+  --color-primary: #9D7CEB;
   --color-primary-hover: #3700b3;
   --color-tag-bg: #333333;
   --color-tag-text: #ffffff;
   --color-input-bg: #333333;
   --color-input-border: #555555;
-  --color-input-focus: #bb86fc;
+  --color-input-focus: #9D7CEB;
   --color-timeline-line: #333333;
-  --color-timeline-dot: #bb86fc;
+  --color-timeline-dot: #9D7CEB;
   --color-timeline-dot-bg: #121212;
-  --color-badge-bg: #bb86fc;
+  --color-badge-bg: #9D7CEB;
   --color-badge-text: #ffffff;
 }
 

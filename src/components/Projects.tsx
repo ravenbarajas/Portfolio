@@ -8,7 +8,7 @@ const Projects = () => {
       description: "Real-time sentiment analysis for customer feedback",
       details:
         "Analyzes customer feedback using NLP techniques, sentiment scoring models, and interactive dashboards.",
-      technologies: ["Python", "LangChain", "Scikit-learn", "FastAPI"],
+      technologies: ["Python", "LangChain", "Scikit-learn"],
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const Projects = () => {
       description: "Comprehensive workforce management platforrm",
       details:
         "Manages employee profiles, attendance tracking, payroll, and HR analytics with an intuitive UI and role-based access control.",
-      technologies: ["React.js", "Laravel", "PostgreSQL", "Python"],
+      technologies: ["React.js", "Laravel", "PostgreSQL"],
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const Projects = () => {
       description: "Management system with real-time analytics",
       details:
         "Tracks procurement processes, vendor contracts, and financial insights with real-time analytics and reporting tools.",
-      technologies: ["React.js", "Laravel", "MySQL", "Tableau"],
+      technologies: ["React.js", "Laravel", "MySQL"],
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ const Projects = () => {
       description: "Centralized dashboard for Logistics and fleet management",
       details:
         "Monitors fleet performance, optimizes delivery routes, and provides cost analysis with interactive dashboards.",
-      technologies: ["React.js", "Flask", "PostgreSQL", "Pandas"],
+      technologies: ["React.js", "Flask", "PostgreSQL"],
     },
   ]
 
@@ -64,6 +64,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   )

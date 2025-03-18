@@ -1,7 +1,6 @@
 import { BrainCircuit } from 'lucide-react';
 import { Code } from "./icons/Code"
 import { ChartSpline } from 'lucide-react';
-import { Web } from "./icons/Web"
 
 const Skills = () => {
   return (
