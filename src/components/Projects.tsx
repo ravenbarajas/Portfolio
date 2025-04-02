@@ -1,4 +1,4 @@
-import { ExternalLink } from "./icons/ExternalLink"
+import { ExternalLink } from "./icons/ExternalLink";
 
 const Projects = () => {
   const projects = [
@@ -13,14 +13,14 @@ const Projects = () => {
     {
       id: 2,
       title: "Enterprice HRMS",
-      description: "Comprehensive workforce management platforrm",
+      description: "Comprehensive workforce management platform",
       details:
         "Manages employee profiles, attendance tracking, payroll, and HR analytics with an intuitive UI and role-based access control.",
       technologies: ["React.js", "Laravel", "PostgreSQL"],
     },
     {
       id: 3,
-      title: "Procurement Management Sytem",
+      title: "Procurement Management System",
       description: "Management system with real-time analytics",
       details:
         "Tracks procurement processes, vendor contracts, and financial insights with real-time analytics and reporting tools.",
@@ -33,8 +33,9 @@ const Projects = () => {
       details:
         "Monitors fleet performance, optimizes delivery routes, and provides cost analysis with interactive dashboards.",
       technologies: ["React.js", "Flask", "PostgreSQL"],
+      link: "http://logidash.free.nf/",
     },
-  ]
+  ];
 
   return (
     <section className="projects" id="projects">
@@ -44,7 +45,14 @@ const Projects = () => {
 
         <div className="projects-grid">
           {projects.map((project) => (
-            <div key={project.id} className="project-card">
+            <a
+              key={project.id}
+              href={project.link || "#"}
+              target={project.link ? "_blank" : "_self"}
+              rel={project.link ? "noopener noreferrer" : ""}
+              className="project-card"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <h3>{project.title}</h3>
               <p className="project-description">{project.description}</p>
               <p className="project-details">{project.details}</p>
@@ -56,19 +64,17 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a href="#" className="view-link">
+                <span className="view-link">
                   <span>View</span>
                   <ExternalLink />
-                </a>
+                </span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
-
+export default Projects;
