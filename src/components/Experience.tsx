@@ -49,7 +49,7 @@ const Experience = () => {
                 <div className="role-header">
                   <h3>{exp.role}</h3>
                   {index === 0 ? (
-                    <span className="period-badge">2021 - Present</span>
+                    <span className="period-badge">2024/11 - Present</span>
                   ) : (
                     <span className="period">{exp.period}</span>
                   )}

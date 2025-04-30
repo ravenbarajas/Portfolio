@@ -17,6 +17,7 @@ const Projects = () => {
       details:
         "Manages employee profiles, attendance tracking, payroll, and HR analytics with an intuitive UI and role-based access control.",
       technologies: ["React.js", "Laravel", "PostgreSQL"],
+      link: "http://enterprise-hrms.free.nf/",
     },
     {
       id: 3,
@@ -25,6 +26,7 @@ const Projects = () => {
       details:
         "Tracks procurement processes, vendor contracts, and financial insights with real-time analytics and reporting tools.",
       technologies: ["React.js", "Laravel", "MySQL"],
+      link: "http://procurex.free.nf/",
     },
     {
       id: 4,
