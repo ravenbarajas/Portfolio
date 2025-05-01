@@ -1,4 +1,15 @@
+import { useEffect, useRef } from 'react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
+import '../styles/Experience.css';
+
 const Experience = () => {
+  // Timeline container ref for timeline line animation
+  const timelineRef = useRef<HTMLDivElement>(null);
+
+  // Use custom hook for scroll animations
+  useScrollAnimation('.timeline', 'animated');
+  useScrollAnimation('.timeline-item', 'animated');
+
   const experiences = [
     {
       id: 1,
@@ -41,7 +52,7 @@ const Experience = () => {
         <h2>Work Experience</h2>
         <p className="section-subtitle">My professional journey</p>
 
-        <div className="timeline">
+        <div className="timeline" ref={timelineRef}>
           {experiences.map((exp, index) => (
             <div key={exp.id} className="timeline-item">
               <div className="timeline-marker"></div>
