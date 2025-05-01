@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from 'react';
 import "../../styles/ui/ThemeToggle.css"
 
 interface ThemeToggleProps {
@@ -8,9 +9,15 @@ interface ThemeToggleProps {
 }
 
 const ThemeToggle = ({ darkMode, toggleTheme }: ThemeToggleProps) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <button
-      className="theme-toggle"
+      className={`theme-toggle ${mounted ? 'mounted' : ''}`}
       onClick={toggleTheme}
       aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
     >

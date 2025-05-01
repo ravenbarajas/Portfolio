@@ -1,32 +1,47 @@
-import { useState } from 'react';
-import darkModeIcon from "../assets/lightMode.png"; // Import the dark mode PNG icon
-import lightModeIcon from "../assets/darkMode.png"; // Import the light mode PNG icon
+import { useState, useEffect } from 'react';
+import ThemeToggle from './ui/ThemeToggle';
+import "../styles/ui/ThemeToggle.css";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  // Check for saved dark mode preference on mount
+  useEffect(() => {
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    setDarkMode(isDarkMode);
+    setMounted(true);
+  }, []);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
-    document.body.classList.toggle('dark-mode'); // Toggle a class on the body
+    document.body.classList.toggle('dark-mode');
   };
 
   return (
     <header className={`header ${darkMode ? 'dark-mode' : ''}`}>
       <div className="container header-container">
+        <div className="logo">
+          <span>RB</span>
+        </div>
 
-        <div className="social-links">
-          <button style={{marginLeft: '10px', backgroundColor: 'transparent', border: 'none', padding: 0, cursor: 'pointer'}} onClick={toggleDarkMode}>
-            <img
-              src={darkMode ? lightModeIcon : darkModeIcon}
-              alt={darkMode ? "Light Mode" : "Dark Mode"}
-              style={{ width: '24px', height: '24px' }} // Adjust size as needed
-            />
-          </button>
+        <nav className="nav">
+          <ul className="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div className="theme-toggle-container">
+          <ThemeToggle darkMode={darkMode} toggleTheme={toggleDarkMode} />
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
 
