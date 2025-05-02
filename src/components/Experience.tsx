@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import '../styles/Experience.css';
 

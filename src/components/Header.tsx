@@ -4,13 +4,11 @@ import "../styles/ui/ThemeToggle.css";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const [mounted, setMounted] = useState(false);
 
   // Check for saved dark mode preference on mount
   useEffect(() => {
     const isDarkMode = document.body.classList.contains('dark-mode');
     setDarkMode(isDarkMode);
-    setMounted(true);
   }, []);
 
   const toggleDarkMode = () => {
