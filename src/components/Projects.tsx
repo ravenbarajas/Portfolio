@@ -52,6 +52,7 @@ const Projects = () => {
       details:
         "Offers personalized travel recommendations and booking options based on user preferences.",
       technologies: ["React.js", "Node.js", "MongoDB"],
+      link: "http://travelease.free.nf/",
       category: "Web Apps",
     },
     {
@@ -61,6 +62,7 @@ const Projects = () => {
       details:
         "Features a user-friendly interface for browsing products, managing orders, and processing payments.",
       technologies: ["React.js", "Express.js", "MySQL"],
+      link: "http://snapmart.free.nf/",
       category: "Web Apps",
     },
     {
@@ -70,6 +72,7 @@ const Projects = () => {
       details:
         "Provides tools for tracking expenses, setting budgets, and analyzing spending habits.",
       technologies: ["React.js", "Django", "SQLite"],
+      link: "http://centscible.free.nf/",
       category: "Web Apps",
     },
     {
