@@ -17,9 +17,7 @@ const Experience = () => {
       period: "2024/11 - Present",
       company: "Accenture, Inc.",
       descriptions: [
-        "Developed AI applications with PyTorch and Hugging Face, ensuring ~98% uptime through optimized model serving",
-        "Enhanced deployment cycles by 25% through Git-based version control and workflow automation",
-        "Implemented MLflow for tracking and model versioning, streamlining ML development with cross-functional teams",
+        "Played a key role in developing advanced AI solutions that leverage data-driven insights and machine learning algorithms to optimize processes and enhance overall performance."
       ],
     },
     {
@@ -28,9 +26,7 @@ const Experience = () => {
       period: "2024/02 - 2024/11",
       company: "VIVA Communications, Inc.",
       descriptions: [
-        "Led the development of internal software tools for 1,000+ users, improving operational efficiency by 20%",
-        "Reduced bug incidents by 30% and accelerated deployment speed by 15% through CI/CD and rigorous testing",
-        "Increased user adoption by 15% via comprehensive documentation and training sessions",
+        "Designed and implemented robust software applications that streamline operational workflows and enhance user experience through agile methodologies and user-centric design."
       ],
     },
     {
@@ -39,9 +35,7 @@ const Experience = () => {
       period: "2023/03 - 2023/07",
       company: "LexMeet",
       descriptions: [
-        "Developed a dashboard module that increased customer engagement by 25% through real-time business insights",
-        "Delivered projects 15% faster with 100% on-time completion by optimizing development workflows",
-        "Enhanced operational efficiency by 20% by implementing data-driven features for better decision-making",
+        "Contributed to the development of dynamic web applications focused on user engagement, utilizing responsive design principles and best practices in usability to deliver impactful results.",
       ],
     },
   ];
