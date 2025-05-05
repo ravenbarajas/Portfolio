@@ -1,9 +1,18 @@
 import { useState } from "react";
 import { ExternalLink } from "./icons/ExternalLink";
 
+type CategoryState = {
+  [key: string]: boolean;
+};
+
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [showAll, setShowAll] = useState(false);
+  const [categoryStates, setCategoryStates] = useState<CategoryState>({
+    All: false,
+    "AI/ML": false,
+    Dashboards: false,
+    "Web Apps": false
+  });
 
   const categories = ["All", "AI/ML", "Dashboards", "Web Apps"];
 
@@ -20,7 +29,7 @@ const Projects = () => {
     {
       id: 2,
       title: "Recipe Recommender System",
-      description: "Suggests recipes based on user preferences and available ingredients.",
+      description: "Suggests recipes based on user preferences and ingredients.",
       details:
         "Utilizes machine learning algorithms to recommend recipes tailored to user tastes and dietary restrictions.",
       technologies: ["Python", "Flask", "TensorFlow"],
@@ -39,7 +48,7 @@ const Projects = () => {
     {
       id: 4,
       title: "TravelEase",
-      description: "A travel planning application that helps users find and book trips.",
+      description: "A travel planning app that helps users find and book trips.",
       details:
         "Offers personalized travel recommendations and booking options based on user preferences.",
       technologies: ["React.js", "Node.js", "MongoDB"],
@@ -57,7 +66,7 @@ const Projects = () => {
     {
       id: 6,
       title: "Centscible",
-      description: "A budgeting app that helps users manage their finances effectively.",
+      description: "Budgeting app for tracking expenses and setting budgets.",
       details:
         "Provides tools for tracking expenses, setting budgets, and analyzing spending habits.",
       technologies: ["React.js", "Django", "SQLite"],
@@ -83,11 +92,82 @@ const Projects = () => {
       link: "http://enterprise-hrms.free.nf/",
       category: "Web Apps",
     },
+    {
+      id: 9,
+      title: "ShipDirect",
+      description: "Track shipments in real time with up-to-date delivery status.",
+      details: "Provides real-time tracking of shipments, ensuring timely updates on delivery status.",
+      technologies: ["React.js", "Node.js"],
+      link: "http://shipdirect.free.nf/shipments/tracking",
+      category: "Dashboards",
+    },
+    {
+      id: 10,
+      title: "Fleetly",
+      description: "Manage vehicle inventory and maintenance.",
+      details: "Centralizes vehicle management, including inventory tracking and maintenance scheduling.",
+      technologies: ["React.js", "Express.js"],
+      link: "http://fleetly.free.nf/vehicles/inventory",
+      category: "Dashboards",
+    },
+    {
+      id: 11,
+      title: "WarehouseIQ",
+      description: "Optimizes warehouse operations and stock tracking.",
+      details: "Enhances warehouse management through effective stock tracking and storage optimization.",
+      technologies: ["React.js", "Django"],
+      link: "http://warehouseiq.free.nf/warehouse",
+      category: "Dashboards",
+    },
+    {
+      id: 12,
+      title: "PurchaseFlow",
+      description: "Streamline order processing and monitor fulfillment progress.",
+      details: "Facilitates efficient order management and tracking of fulfillment processes.",
+      technologies: ["React.js", "Flask"],
+      link: "http://purchaseflow.free.nf/orders/management",
+      category: "Dashboards",
+    },
+    {
+      id: 13,
+      title: "SupplierBase",
+      description: "Monitors supplier performance and compliance.",
+      details: "Tracks supplier metrics and compliance to enhance supplier management.",
+      technologies: ["React.js", "Laravel"],
+      link: "http://supplierbase.free.nf/suppliers/performance",
+      category: "Dashboards",
+    },
+    {
+      id: 14,
+      title: "ClientSync",
+      description: "Accesses customer profiles and engagement metrics.",
+      details: "Provides insights into customer interactions and engagement for better relationship management.",
+      technologies: ["React.js", "Node.js"],
+      link: "http://clientsync.free.nf/customers/summary",
+      category: "Dashboards",
+    },
   ];
 
-  const filteredProjects = selectedCategory === "All" 
-    ? (showAll ? projects : projects.slice(0, 4))
+  // Get all projects for the selected category
+  const allCategoryProjects = selectedCategory === "All" 
+    ? projects 
     : projects.filter(project => project.category === selectedCategory);
+
+  // Determine if we should show all projects or just the first 4
+  const filteredProjects = categoryStates[selectedCategory] 
+    ? allCategoryProjects 
+    : allCategoryProjects.slice(0, 4);
+
+  // Check if the category has more than 4 projects (2 rows)
+  const showMoreButtonVisible = allCategoryProjects.length > 4;
+
+  // Function to toggle show all state for a category
+  const toggleShowAll = (category: string) => {
+    setCategoryStates(prevState => ({
+      ...prevState,
+      [category]: !prevState[category]
+    }));
+  };
 
   return (
     <section className="projects" id="projects">
@@ -108,7 +188,6 @@ const Projects = () => {
               key={category} 
               onClick={() => {
                 setSelectedCategory(category);
-                setShowAll(false);
               }} 
               className={`category-button ${selectedCategory === category ? "active" : ""}`}
               style={{
@@ -168,11 +247,11 @@ const Projects = () => {
           ))}
         </div>
 
-        {selectedCategory === "All" && (
+        {showMoreButtonVisible && (
           <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            {!showAll ? (
+            {!categoryStates[selectedCategory] ? (
               <button 
-                onClick={() => setShowAll(true)} 
+                onClick={() => toggleShowAll(selectedCategory)} 
                 style={{ 
                   padding: '10px 20px', 
                   border: 'none', 
@@ -195,7 +274,7 @@ const Projects = () => {
               </button>
             ) : (
               <button 
-                onClick={() => setShowAll(false)} 
+                onClick={() => toggleShowAll(selectedCategory)} 
                 style={{ 
                   padding: '10px 20px', 
                   border: 'none', 
