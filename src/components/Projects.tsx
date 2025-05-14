@@ -19,10 +19,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Customer Sentiment Analyzer",
-      description: "Real-time sentiment analysis for customer feedback",
+      title: "Stock Market Sentiment Analyzer",
+      description: "Real-time sentiment analysis for stock market",
       details:
-        "Analyzes customer feedback using NLP techniques, sentiment scoring models, and interactive dashboards.",
+        "Analyzes stock market using NLP techniques, sentiment scoring models, and interactive dashboards.",
       technologies: ["Python", "LangChain", "Scikit-learn"],
       category: "AI/ML",
     },
@@ -37,6 +37,22 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "GPT-Powered Legal Case Similarity Finder",
+      description: "Finds similar legal cases based on a case description.",
+      details: "Utilizes GPT-based embeddings and vector search to help legal professionals find past cases similar to a given legal issue.",
+      technologies: ["Python", "OpenAI API", "FAISS", "Streamlit"],
+      category: "AI/ML"
+    },
+    {
+      id: 4,
+      title: "AI-Powered Commute Assistant",
+      description: "Provides step-by-step commute instructions for urban transportation.",
+      details: "Uses AI to suggest optimal public transport routes in Metro Manila, considering jeepneys, buses, trains, and tricycles.",
+      technologies: ["Python", "OpenAI GPT-3", "Flask", "Streamlit"],
+      category: "AI/ML"
+    },
+    {
+      id: 5,
       title: "Logistics Operations Dashboard",
       description: "Centralized dashboard for Logistics and fleet management",
       details:
@@ -46,7 +62,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 4,
+      id: 6,
       title: "TravelEase",
       description: "A travel planning app that helps users find and book trips.",
       details:
@@ -56,7 +72,7 @@ const Projects = () => {
       category: "Web Apps",
     },
     {
-      id: 5,
+      id: 7,
       title: "SnapMart",
       description: "An e-commerce platform for buying and selling products.",
       details:
@@ -66,7 +82,7 @@ const Projects = () => {
       category: "Web Apps",
     },
     {
-      id: 6,
+      id: 8,
       title: "Centscible",
       description: "Budgeting app for tracking expenses and setting budgets.",
       details:
@@ -76,7 +92,7 @@ const Projects = () => {
       category: "Web Apps",
     },
     {
-      id: 7,
+      id: 9,
       title: "Procurement Management System",
       description: "Management system with real-time analytics",
       details:
@@ -86,7 +102,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 8,
+      id: 10,
       title: "Enterprice HRMS",
       description: "Comprehensive workforce management platform",
       details:
@@ -96,7 +112,7 @@ const Projects = () => {
       category: "Web Apps",
     },
     {
-      id: 9,
+      id: 11,
       title: "ShipDirect",
       description: "Track shipments in real time with up-to-date delivery status.",
       details: "Provides real-time tracking of shipments, ensuring timely updates on delivery status.",
@@ -105,7 +121,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 10,
+      id: 12,
       title: "Fleetly",
       description: "Manage vehicle inventory and maintenance.",
       details: "Centralizes vehicle management, including inventory tracking and maintenance scheduling.",
@@ -114,7 +130,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 11,
+      id: 13,
       title: "WarehouseIQ",
       description: "Optimizes warehouse operations and stock tracking.",
       details: "Enhances warehouse management through effective stock tracking and storage optimization.",
@@ -123,7 +139,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 12,
+      id: 14,
       title: "PurchaseFlow",
       description: "Streamline order processing and monitor fulfillment progress.",
       details: "Facilitates efficient order management and tracking of fulfillment processes.",
@@ -132,7 +148,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 13,
+      id: 15,
       title: "SupplierBase",
       description: "Monitors supplier performance and compliance.",
       details: "Tracks supplier metrics and compliance to enhance supplier management.",
@@ -141,7 +157,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 14,
+      id: 16,
       title: "ClientSync",
       description: "Accesses customer profiles and engagement metrics.",
       details: "Provides insights into customer interactions and engagement for better relationship management.",
