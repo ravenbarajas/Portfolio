@@ -46,7 +46,7 @@ const Projects = () => {
     {
       id: 4,
       title: "AI-Powered Commute Assistant",
-      description: "Provides step-by-step commute instructions for urban transportation.",
+      description: "Provides step-by-step instructions for urban transportation.",
       details: "Uses AI to suggest optimal public transport routes in Metro Manila, considering jeepneys, buses, trains, and tricycles.",
       technologies: ["Python", "OpenAI GPT-3", "Flask", "Streamlit"],
       category: "AI/ML"
