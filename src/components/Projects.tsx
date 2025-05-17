@@ -34,6 +34,7 @@ const Projects = () => {
         "Utilizes machine learning algorithms to recommend recipes tailored to user tastes and dietary restrictions.",
       technologies: ["Python", "Flask", "TensorFlow"],
       category: "AI/ML",
+      link: "http://recipegram.free.nf/",
     },
     {
       id: 3,
@@ -41,7 +42,8 @@ const Projects = () => {
       description: "Finds similar legal cases based on a case description.",
       details: "Utilizes GPT-based embeddings and vector search to help legal professionals find past cases similar to a given legal issue.",
       technologies: ["Python", "OpenAI API", "FAISS", "Streamlit"],
-      category: "AI/ML"
+      category: "AI/ML",
+      link: "http://casematchai.free.nf/",
     },
     {
       id: 4,
