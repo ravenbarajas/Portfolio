@@ -25,6 +25,7 @@ const Projects = () => {
         "Analyzes stock market using NLP techniques, sentiment scoring models, and interactive dashboards.",
       technologies: ["Python", "LangChain", "Scikit-learn"],
       category: "AI/ML",
+      link: "http://stocksentio.free.nf/",
     },
     {
       id: 2,
@@ -51,7 +52,8 @@ const Projects = () => {
       description: "Provides step-by-step instructions for urban transportation.",
       details: "Uses AI to suggest optimal public transport routes in Metro Manila, considering jeepneys, buses, trains, and tricycles.",
       technologies: ["Python", "OpenAI GPT-3", "Flask", "Streamlit"],
-      category: "AI/ML"
+      category: "AI/ML",
+      link: "http://waylo.free.nf/",
     },
     {
       id: 5,
