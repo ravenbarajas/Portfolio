@@ -144,7 +144,7 @@ const Projects = () => {
     },
     {
       id: 14,
-      title: "PurchaseFlow",
+      title: "Order Management System",
       description: "Streamline order processing and monitor fulfillment progress.",
       details: "Facilitates efficient order management and tracking of fulfillment processes.",
       technologies: ["React.js", "Flask"],
