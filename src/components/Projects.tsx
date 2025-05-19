@@ -97,6 +97,16 @@ const Projects = () => {
     },
     {
       id: 9,
+      title: "Insights Dashboard",
+      description: "Real-time analytics and reporting tools",
+      details:
+        "Provides real-time analytics and reporting tools for tracking processes, vendor contracts, and financial insights.",
+      technologies: ["React.js", "Laravel", "MySQL"],
+      link: "http://analytiqs.free.nf/",
+      category: "Dashboards",
+    },
+    {
+      id: 10,
       title: "Procurement Management System",
       description: "Management system with real-time analytics",
       details:
@@ -106,7 +116,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 10,
+      id: 11,
       title: "Enterprice HRMS",
       description: "Comprehensive workforce management platform",
       details:
@@ -116,7 +126,7 @@ const Projects = () => {
       category: "Web Apps",
     },
     {
-      id: 11,
+      id: 12,
       title: "ShipDirect",
       description: "Track shipments in real time with up-to-date delivery status.",
       details: "Provides real-time tracking of shipments, ensuring timely updates on delivery status.",
@@ -125,7 +135,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 12,
+      id: 13,
       title: "Fleetly",
       description: "Manage vehicle inventory and maintenance.",
       details: "Centralizes vehicle management, including inventory tracking and maintenance scheduling.",
@@ -134,7 +144,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 13,
+      id: 14,
       title: "WarehouseIQ",
       description: "Optimizes warehouse operations and stock tracking.",
       details: "Enhances warehouse management through effective stock tracking and storage optimization.",
@@ -143,16 +153,16 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 14,
+      id: 15,
       title: "Order Management System",
       description: "Streamline order processing and monitor fulfillment progress.",
       details: "Facilitates efficient order management and tracking of fulfillment processes.",
       technologies: ["React.js", "Flask"],
-      link: "http://purchaseflow.free.nf/orders/management",
+      link: "http://purchaseflow.free.nf/orders",
       category: "Dashboards",
     },
     {
-      id: 15,
+      id: 16,
       title: "SupplierBase",
       description: "Monitors supplier performance and compliance.",
       details: "Tracks supplier metrics and compliance to enhance supplier management.",
@@ -161,7 +171,7 @@ const Projects = () => {
       category: "Dashboards",
     },
     {
-      id: 16,
+      id: 17,
       title: "ClientSync",
       description: "Accesses customer profiles and engagement metrics.",
       details: "Provides insights into customer interactions and engagement for better relationship management.",
