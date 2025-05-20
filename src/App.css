@@ -86,7 +86,6 @@ body.dark-mode .hero h1 .name {
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  padding-bottom: .5rem;
 }
 
 * {
@@ -386,6 +385,7 @@ body.dark-mode .logo {
   background-clip: text;
   color: transparent;
   animation: textShine 3s ease infinite;
+  padding-bottom: .5rem;
 }
 
 .title {

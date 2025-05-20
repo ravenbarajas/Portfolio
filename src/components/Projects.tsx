@@ -172,7 +172,7 @@ const Projects = () => {
     },
     {
       id: 17,
-      title: "ClientSync",
+      title: "Customer Management System",
       description: "Accesses customer profiles and engagement metrics.",
       details: "Provides insights into customer interactions and engagement for better relationship management.",
       technologies: ["React.js", "Node.js"],
