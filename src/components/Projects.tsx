@@ -188,6 +188,15 @@ const Projects = () => {
       link: "http://reportgenius.free.nf/",
       category: "Dashboards",
     },
+    {
+      id: 19,
+      title: "Customer Relationship Management System",
+      description: "Manages customer relationships and interactions.",
+      details: "Provides tools for managing customer relationships, including customer profiles, interactions, and support.",
+      technologies: ["React.js", "Node.js"],
+      link: "http://connectsphere.free.nf/",
+      category: "Web Apps",
+    },
   ];
 
   // Get all projects for the selected category
