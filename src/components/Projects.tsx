@@ -102,7 +102,7 @@ const Projects = () => {
       details:
         "Provides real-time analytics and reporting tools for tracking processes, vendor contracts, and financial insights.",
       technologies: ["React.js", "Laravel", "MySQL"],
-      link: "http://analytiqs.free.nf/",
+      link: "http://analytiqx.free.nf/",
       category: "Dashboards",
     },
     {
@@ -176,7 +176,16 @@ const Projects = () => {
       description: "Accesses customer profiles and engagement metrics.",
       details: "Provides insights into customer interactions and engagement for better relationship management.",
       technologies: ["React.js", "Node.js"],
-      link: "http://clientsync.free.nf/customers/summary",
+      link: "http://clientsync.free.nf/",
+      category: "Dashboards",
+    },
+    {
+      id: 18,
+      title: "Data Reporting Platform",
+      description: "Manages and generates reports for various departments.",
+      details: "Integrates with the company's database to generate reports for various departments.",
+      technologies: ["React.js", "Node.js"],
+      link: "http://reportgenius.free.nf/",
       category: "Dashboards",
     },
   ];
