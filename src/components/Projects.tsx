@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ExternalLink } from "./icons/ExternalLink";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 type CategoryState = {
   [key: string]: boolean;
@@ -328,7 +329,7 @@ const Projects = () => {
         </div>
 
         {paginationVisible && (
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', gap: '10px' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '20px', gap: '10px' }}>
             <button
               onClick={prevPage}
               disabled={currentPage === 1}
@@ -352,8 +353,11 @@ const Projects = () => {
                 if (currentPage > 1) e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
-              Previous
+              <ChevronLeft size={20} />
             </button>
+            <span style={{ fontSize: '1rem', fontWeight: '500', color: 'var(--color-text)' }}>
+              {currentPage} / {totalPages}
+            </span>
             <button
               onClick={nextPage}
               disabled={currentPage === totalPages}
@@ -377,7 +381,7 @@ const Projects = () => {
                 if (currentPage < totalPages) e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
-              Next
+              <ChevronRight size={20} />
             </button>
           </div>
         )}
