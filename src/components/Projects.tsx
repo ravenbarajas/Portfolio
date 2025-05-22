@@ -154,7 +154,7 @@ const Projects = () => {
     },
     {
       id: 15,
-      title: "Order Management System",
+      title: "Order Management Dashboard",
       description: "Streamline order processing and monitor fulfillment progress.",
       details: "Facilitates efficient order management and tracking of fulfillment processes.",
       technologies: ["React.js", "Flask"],
@@ -172,7 +172,7 @@ const Projects = () => {
     },
     {
       id: 17,
-      title: "Customer Management System",
+      title: "Customer Management Dashboard",
       description: "Accesses customer profiles and engagement metrics.",
       details: "Provides insights into customer interactions and engagement for better relationship management.",
       technologies: ["React.js", "Node.js"],
@@ -196,6 +196,15 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       link: "http://connectsphere.free.nf/",
       category: "Web Apps",
+    },
+    {
+      id: 20,
+      title: "Route Optimization Dashboard",
+      description: "Optimizes delivery routes for fleet management.",
+      details: "Provides tools for optimizing delivery routes for fleet management.",
+      technologies: ["React.js", "Node.js"],
+      link: "http://routelogic.free.nf/",
+      category: "Dashboards",
     },
   ];
 
