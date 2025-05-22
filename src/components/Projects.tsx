@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ExternalLink } from "./icons/ExternalLink";
 
 type CategoryState = {
@@ -7,6 +7,7 @@ type CategoryState = {
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
   const [categoryStates, setCategoryStates] = useState<CategoryState>({
     All: false,
     "AI/ML": false,
@@ -208,25 +209,44 @@ const Projects = () => {
     },
   ];
 
+  const projectsPerPage = 4; // 2x2 grid
+
   // Get all projects for the selected category
-  const allCategoryProjects = selectedCategory === "All" 
-    ? projects 
+  const allCategoryProjects = selectedCategory === "All"
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
-  // Determine if we should show all projects or just the first 4
-  const filteredProjects = categoryStates[selectedCategory] 
-    ? allCategoryProjects 
-    : allCategoryProjects.slice(0, 4);
+  // Calculate total pages
+  const totalPages = Math.ceil(allCategoryProjects.length / projectsPerPage);
 
-  // Check if the category has more than 4 projects (2 rows)
-  const showMoreButtonVisible = allCategoryProjects.length > 4;
+  // Get current projects based on pagination
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = allCategoryProjects.slice(indexOfFirstProject, indexOfLastProject);
 
-  // Function to toggle show all state for a category
-  const toggleShowAll = (category: string) => {
-    setCategoryStates(prevState => ({
-      ...prevState,
-      [category]: !prevState[category]
-    }));
+  // Reset page when category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory]);
+
+  // Check if pagination controls should be visible
+  const paginationVisible = allCategoryProjects.length > projectsPerPage;
+
+  // Function to navigate pages
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
+  // Function to go to next page
+  const nextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  // Function to go to previous page
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
   };
 
   return (
@@ -235,20 +255,20 @@ const Projects = () => {
         <h2>Featured Projects</h2>
         <p className="section-subtitle">Some of my recent work</p>
 
-        <div className="category-toggle" style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
+        <div className="category-toggle" style={{
+          display: 'flex',
+          justifyContent: 'center',
           marginBottom: '20px',
           gap: '10px',
           width: 'fit-content',
           margin: '0 auto 20px'
         }}>
           {categories.map(category => (
-            <button 
-              key={category} 
+            <button
+              key={category}
               onClick={() => {
                 setSelectedCategory(category);
-              }} 
+              }}
               className={`category-button ${selectedCategory === category ? "active" : ""}`}
               style={{
                 padding: 'var(--space-1) var(--space-3)',
@@ -278,7 +298,7 @@ const Projects = () => {
         </div>
 
         <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
-          {filteredProjects.map((project) => (
+          {currentProjects.map((project) => (
             <a
               key={project.id}
               href={project.link || "#"}
@@ -307,55 +327,58 @@ const Projects = () => {
           ))}
         </div>
 
-        {showMoreButtonVisible && (
-          <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            {!categoryStates[selectedCategory] ? (
-              <button 
-                onClick={() => toggleShowAll(selectedCategory)} 
-                style={{ 
-                  padding: '10px 20px', 
-                  border: 'none', 
-                  borderRadius: '5px', 
-                  backgroundColor: 'var(--color-primary)', 
-                  color: '#fff', 
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-sans)',
-                  lineHeight: '1.6',
-                  transition: 'transform var(--transition-medium), background-color var(--transition-medium)',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                See More
-              </button>
-            ) : (
-              <button 
-                onClick={() => toggleShowAll(selectedCategory)} 
-                style={{ 
-                  padding: '10px 20px', 
-                  border: 'none', 
-                  borderRadius: '5px', 
-                  backgroundColor: 'var(--color-primary)', 
-                  color: '#fff', 
-                  cursor: 'pointer',
-                  fontFamily: 'var(--font-sans)',
-                  lineHeight: '1.6',
-                  transition: 'transform var(--transition-medium), background-color var(--transition-medium)',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-              >
-                See Less
-              </button>
-            )}
+        {paginationVisible && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', gap: '10px' }}>
+            <button
+              onClick={prevPage}
+              disabled={currentPage === 1}
+              style={{
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '5px',
+                backgroundColor: 'var(--color-primary)',
+                color: '#fff',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-sans)',
+                lineHeight: '1.6',
+                transition: 'transform var(--transition-medium), background-color var(--transition-medium)',
+                opacity: currentPage === 1 ? 0.5 : 1,
+                pointerEvents: currentPage === 1 ? 'none' : 'auto',
+              }}
+              onMouseEnter={(e) => {
+                if (currentPage > 1) e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                if (currentPage > 1) e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              Previous
+            </button>
+            <button
+              onClick={nextPage}
+              disabled={currentPage === totalPages}
+              style={{
+                padding: '10px 20px',
+                border: 'none',
+                borderRadius: '5px',
+                backgroundColor: 'var(--color-primary)',
+                color: '#fff',
+                cursor: 'pointer',
+                fontFamily: 'var(--font-sans)',
+                lineHeight: '1.6',
+                transition: 'transform var(--transition-medium), background-color var(--transition-medium)',
+                opacity: currentPage === totalPages ? 0.5 : 1,
+                pointerEvents: currentPage === totalPages ? 'none' : 'auto',
+              }}
+               onMouseEnter={(e) => {
+                if (currentPage < totalPages) e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={(e) => {
+                if (currentPage < totalPages) e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              Next
+            </button>
           </div>
         )}
       </div>
