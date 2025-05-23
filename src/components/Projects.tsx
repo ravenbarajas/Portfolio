@@ -18,6 +18,7 @@ const Projects = () => {
       technologies: ["Python", "LangChain", "Scikit-learn"],
       category: "AI/ML",
       link: "http://stocksentio.free.nf/",
+      type: "Personal",
     },
     {
       id: 2,
@@ -28,15 +29,17 @@ const Projects = () => {
       technologies: ["Python", "Flask", "TensorFlow"],
       category: "AI/ML",
       link: "http://recipegram.free.nf/",
+      type: "Personal",
     },
     {
       id: 3,
-      title: "GPT-Powered Legal Case Similarity Finder",
-      description: "Finds similar legal cases based on a case description.",
-      details: "Utilizes GPT-based embeddings and vector search to help legal professionals find past cases similar to a given legal issue.",
-      technologies: ["Python", "OpenAI API", "FAISS", "Streamlit"],
+      title: "AI Customer Service Chatbot",
+      description: "AI-powered customer service chatbot for a roofing company.",
+      details: "Provides a chatbot for the company's customers to answer their questions and provide support.",
+      technologies: ["React.js", "Node.js", "OpenAI API", "LangChain"],
+      link: "http://chatbot.free.nf/",
       category: "AI/ML",
-      link: "http://casematchai.free.nf/",
+      type: "Client",
     },
     {
       id: 4,
@@ -46,6 +49,7 @@ const Projects = () => {
       technologies: ["Python", "OpenAI GPT-3", "Flask", "Streamlit"],
       category: "AI/ML",
       link: "http://waylo.free.nf/",
+      type: "Personal",
     },
     {
       id: 5,
@@ -56,6 +60,7 @@ const Projects = () => {
       technologies: ["React.js", "Flask", "PostgreSQL"],
       link: "http://logidash.free.nf/",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 6,
@@ -66,6 +71,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "MongoDB"],
       link: "http://travelease.free.nf/",
       category: "Web Apps",
+      type: "Client",
     },
     {
       id: 7,
@@ -76,6 +82,7 @@ const Projects = () => {
       technologies: ["React.js", "Express.js", "MySQL"],
       link: "http://snapmart.free.nf/",
       category: "Web Apps",
+      type: "Client",
     },
     {
       id: 8,
@@ -86,6 +93,7 @@ const Projects = () => {
       technologies: ["React.js", "Django", "SQLite"],
       link: "http://centscible.free.nf/",
       category: "Web Apps",
+      type: "Personal",
     },
     {
       id: 9,
@@ -96,6 +104,7 @@ const Projects = () => {
       technologies: ["React.js", "Laravel", "MySQL"],
       link: "http://analytiqx.free.nf/",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 10,
@@ -106,6 +115,7 @@ const Projects = () => {
       technologies: ["React.js", "Laravel", "MySQL"],
       link: "http://procurex.free.nf/",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 11,
@@ -116,6 +126,7 @@ const Projects = () => {
       technologies: ["React.js", "Laravel", "PostgreSQL"],
       link: "http://enterprise-hrms.free.nf/",
       category: "Web Apps",
+      type: "Personal",
     },
     {
       id: 12,
@@ -125,6 +136,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       link: "http://shipdirect.free.nf/shipments",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 13,
@@ -134,6 +146,7 @@ const Projects = () => {
       technologies: ["React.js", "Express.js"],
       link: "http://fleetly.free.nf/vehicles/inventory",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 14,
@@ -143,6 +156,7 @@ const Projects = () => {
       technologies: ["React.js", "Django"],
       link: "http://warehouseiq.free.nf/warehouse",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 15,
@@ -152,15 +166,17 @@ const Projects = () => {
       technologies: ["React.js", "Flask"],
       link: "http://purchaseflow.free.nf/orders",
       category: "Dashboards",
+      type: "Client",
     },
     {
       id: 16,
       title: "SupplierBase",
       description: "Monitors supplier performance and compliance.",
-      details: "Tracks supplier metrics and compliance to enhance supplier management.",
+      details: "Tracks supplier metrics such as delivery timeliness, product quality, and cost efficiency.",
       technologies: ["React.js", "Laravel"],
       link: "http://supplierbase.free.nf/suppliers/performance",
       category: "Dashboards",
+      type: "Personal",
     },
     {
       id: 17,
@@ -170,6 +186,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       link: "http://clientsync.free.nf/",
       category: "Dashboards",
+      type: "Client",
     },
     {
       id: 18,
@@ -179,6 +196,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       link: "http://reportgenius.free.nf/",
       category: "Dashboards",
+      type: "Client",
     },
     {
       id: 19,
@@ -188,15 +206,27 @@ const Projects = () => {
       technologies: ["React.js", "Node.js"],
       link: "http://connectsphere.free.nf/",
       category: "Web Apps",
+      type: "Client",
     },
     {
       id: 20,
       title: "Route Optimization Dashboard",
       description: "Optimizes delivery routes for fleet management.",
-      details: "Provides tools for optimizing delivery routes for fleet management.",
+      details: "Provides tools for optimizing delivery routes such as real-time traffic data for fleet management.",
       technologies: ["React.js", "Node.js"],
       link: "http://routelogic.free.nf/",
       category: "Dashboards",
+      type: "Client",
+    },
+    {
+      id: 21,
+      title: "GPT-Powered Legal Case Similarity Finder",
+      description: "Finds similar legal cases based on a case description.",
+      details: "Utilizes GPT-based embeddings and vector search to help legal professionals find past cases similar to a given legal issue.",
+      technologies: ["Python", "OpenAI API", "FAISS", "Streamlit"],
+      category: "AI/ML",
+      link: "http://casematchai.free.nf/",
+      type: "Personal",
     },
   ];
 
@@ -296,7 +326,12 @@ const Projects = () => {
               style={{ textDecoration: "none", color: "inherit", marginBottom: '20px' }}
             >
               <h3>{project.title}</h3>
-              <p className="project-description">{project.description}</p>
+              {project.type && 
+                <span className="project-type-tag" style={{ 
+                display: 'inline-block', verticalAlign: 'top', fontSize: '0.8em', padding: '2px 6px', borderRadius: '4px', backgroundColor: '#e0e0e0', color: '#333', marginRight: '10px' }}>
+                {project.type}
+                </span>}
+              <p className="project-description" style={{ display: 'inline-block', marginRight: '10px' }}>{project.description}</p>
               <p className="project-details">{project.details}</p>
               <div className="project-footer">
                 <div className="project-technologies">
