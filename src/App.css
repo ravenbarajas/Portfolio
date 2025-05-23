@@ -878,6 +878,7 @@ body.dark-mode .project-card {
   gap: var(--space-1);
   font-size: 0.9rem;
   font-weight: 500;
+  color: var(--color-primary);
 }
 
 .view-link:hover {

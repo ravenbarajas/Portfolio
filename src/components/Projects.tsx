@@ -2,19 +2,9 @@ import { useState, useEffect } from "react";
 import { ExternalLink } from "./icons/ExternalLink";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-type CategoryState = {
-  [key: string]: boolean;
-};
-
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
-  const [categoryStates, setCategoryStates] = useState<CategoryState>({
-    All: false,
-    "AI/ML": false,
-    Dashboards: false,
-    "Web Apps": false
-  });
 
   const categories = ["All", "AI/ML", "Dashboards", "Web Apps"];
 
@@ -129,11 +119,11 @@ const Projects = () => {
     },
     {
       id: 12,
-      title: "ShipDirect",
+      title: "Shipment Tracking Dashboard",
       description: "Track shipments in real time with up-to-date delivery status.",
       details: "Provides real-time tracking of shipments, ensuring timely updates on delivery status.",
       technologies: ["React.js", "Node.js"],
-      link: "http://shipdirect.free.nf/shipments/tracking",
+      link: "http://shipdirect.free.nf/shipments",
       category: "Dashboards",
     },
     {
@@ -232,9 +222,6 @@ const Projects = () => {
 
   // Check if pagination controls should be visible
   const paginationVisible = allCategoryProjects.length > projectsPerPage;
-
-  // Function to navigate pages
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   // Function to go to next page
   const nextPage = () => {
