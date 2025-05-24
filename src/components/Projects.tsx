@@ -228,6 +228,16 @@ const Projects = () => {
       link: "http://casematchai.free.nf/",
       type: "Personal",
     },
+    {
+      id: 22,
+      title: "Task & Notes Organizer",
+      description: "Organizes tasks and notes with a user-friendly interface.",
+      details: "Provides a user-friendly interface for organizing tasks and notes, including reminders and categorization.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://stickboard.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
