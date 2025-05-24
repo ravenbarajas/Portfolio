@@ -3,12 +3,15 @@ import ThemeToggle from './ui/ThemeToggle';
 import "../styles/ui/ThemeToggle.css";
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   // Check for saved dark mode preference on mount
   useEffect(() => {
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    setDarkMode(isDarkMode);
+    // If there's no existing preference in body class, apply dark mode by default
+    if (!document.body.classList.contains('dark-mode')) {
+      document.body.classList.add('dark-mode');
+    }
+    setDarkMode(true);
   }, []);
 
   const toggleDarkMode = () => {
