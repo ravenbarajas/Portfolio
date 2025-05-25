@@ -149,7 +149,7 @@ const Projects = () => {
     },
     {
       id: 14,
-      title: "WarehouseIQ",
+      title: "Warehouse Inventory Dashboard",
       description: "Optimizes warehouse operations and stock tracking.",
       details: "Enhances warehouse management through effective stock tracking and storage optimization.",
       technologies: ["React.js", "Django"],
