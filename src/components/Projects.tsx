@@ -11,17 +11,6 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Stock Market Sentiment Analyzer",
-      description: "Real-time sentiment analysis for stock market",
-      details:
-        "Analyzes stock market using NLP techniques, sentiment scoring models, and interactive dashboards.",
-      technologies: ["Python", "LangChain", "Scikit-learn"],
-      category: "AI/ML",
-      link: "http://stocksentio.free.nf/",
-      type: "Personal",
-    },
-    {
-      id: 2,
       title: "Order Management Dashboard",
       description: "Streamline order processing and monitor fulfillment progress.",
       details: "Incorporating efficient order management and tracking with AI-powered demand forecasting for inventory and logistics.",
@@ -31,12 +20,22 @@ const Projects = () => {
       type: "Client",
     },
     {
-      id: 3,
+      id: 2,
       title: "Roofing Company Website",
       description: "Roofing company website with AI customer service chatbot.",
       details: "Integrated an AI chatbot to offer instant customer support and address common inquiries.",
       technologies: ["React.js", "Node.js", "OpenAI API", "LangChain"],
       link: "http://heartland-roofing.free.nf/",
+      category: "AI/ML",
+      type: "Client",
+    },
+    {
+      id: 3,
+      title: "Fitness Subscription Website",
+      description: "Fitness subscription website with AI-powered features for personalized workout plans and nutrition advice.",
+      details: "Provides a subscription platform for fitness enthusiasts, offering AI-powered personalized workout plans and nutrition advice.",
+      technologies: ["React.js", "Node.js", "OpenAI API", "LangChain"],
+      link: "http://bayfit-network.free.nf/",
       category: "AI/ML",
       type: "Client",
     },
@@ -210,6 +209,17 @@ const Projects = () => {
     },
     {
       id: 20,
+      title: "Stock Market Sentiment Analyzer",
+      description: "Real-time sentiment analysis for stock market",
+      details:
+        "Analyzes stock market using NLP techniques, sentiment scoring models, and interactive dashboards.",
+      technologies: ["Python", "LangChain", "Scikit-learn"],
+      category: "AI/ML",
+      link: "http://stocksentio.free.nf/",
+      type: "Personal",
+    },
+    {
+      id: 21,
       title: "GPT-Powered Legal Case Similarity Finder",
       description: "Finds similar legal cases based on a case description.",
       details: "Utilizes GPT-based embeddings and vector search to help legal professionals find past cases similar to a given legal issue.",
@@ -219,7 +229,7 @@ const Projects = () => {
       type: "Personal",
     },
     {
-      id: 21,
+      id: 22,
       title: "AI-Powered Commute Assistant",
       description: "Provides step-by-step instructions for urban transportation.",
       details: "Uses AI to suggest optimal public transport routes in Metro Manila, considering jeepneys, buses, trains, and tricycles.",
@@ -229,7 +239,7 @@ const Projects = () => {
       type: "Personal",
     },
     {
-      id: 22,
+      id: 23,
       title: "Task & Notes Organizer",
       description: "Organizes tasks and notes with a user-friendly interface.",
       details: "Provides a user-friendly interface for organizing tasks and notes, including reminders and categorization.",
