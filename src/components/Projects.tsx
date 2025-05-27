@@ -248,6 +248,16 @@ const Projects = () => {
       link: "http://stickyboard.free.nf/",
       type: "Personal",
     },
+    {
+      id: 24,
+      title: "Ecommerce Marketplace",
+      description: "An online marketplace for buying and selling products.",
+      details: "Provides a user-friendly interface for browsing products, managing orders, and processing payments.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://cartella.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
