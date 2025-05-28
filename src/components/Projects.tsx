@@ -258,6 +258,16 @@ const Projects = () => {
       link: "http://cartella.free.nf/",
       type: "Personal",
     },
+    {
+      id: 25,
+      title: "Learner Management System",
+      description: "A system for managing learner profiles, attendance, and progress.",
+      details: "Provides a user-friendly interface for managing learner profiles, attendance, and progress.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://edutracklms.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
