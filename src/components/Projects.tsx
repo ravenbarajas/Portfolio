@@ -268,6 +268,16 @@ const Projects = () => {
       link: "http://edutracklms.free.nf/",
       type: "Personal",
     },
+    {
+      id: 26,
+      title: "AI Commute Assistant",
+      description: "A system for managing commute routes and traffic conditions.",
+      details: "Provides a user-friendly interface for managing commute routes and traffic conditions.",
+      technologies: ["Python", "OpenAI API", "Flask", "Streamlit"],
+      category: "AI/ML",
+      link: "http://commutegpt.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
