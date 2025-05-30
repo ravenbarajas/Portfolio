@@ -278,6 +278,16 @@ const Projects = () => {
       link: "http://commutegpt.free.nf/",
       type: "Personal",
     },
+    {
+      id: 27,
+      title: "Gamified Habit Tracker",
+      description: "A system for tracking and managing habits.",
+      details: "Provides a gamified user-friendly interface for tracking and managing habits.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://habitquest.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
