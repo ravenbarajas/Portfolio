@@ -32,7 +32,7 @@ const Projects = () => {
     {
       id: 3,
       title: "Fitness Subscription Website",
-      description: "AI-powered website for personalized workout plans and nutrition advice.",
+      description: "AI-powered website for a fitness subscription service.",
       details: "Provides a subscription platform for fitness enthusiasts, offering AI-powered personalized workout plans and nutrition advice.",
       technologies: ["React.js", "Node.js", "OpenAI API", "LangChain"],
       link: "http://bayfit-network.free.nf/",
