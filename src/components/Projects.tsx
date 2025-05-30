@@ -117,12 +117,12 @@ const Projects = () => {
     },
     {
       id: 11,
-      title: "Enterprice HRMS",
+      title: "Enterprice HRIS",
       description: "Comprehensive workforce management platform",
       details:
         "Manages employee profiles, attendance tracking, payroll, and HR analytics with an intuitive UI and role-based access control.",
       technologies: ["React.js", "Laravel", "PostgreSQL"],
-      link: "http://enterprise-hrms.free.nf/",
+      link: "http://corehrx.free.nf/",
       category: "Web Apps",
       type: "Personal",
     },
