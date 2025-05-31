@@ -298,6 +298,16 @@ const Projects = () => {
       link: "http://oralease.free.nf/",
       type: "Personal",
     },
+    {
+      id: 29,
+      title: "Library Management System",
+      description: "A system for managing library resources and transactions.",
+      details: "Provides a user-friendly interface for managing library resources and transactions.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://shelfsmart.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
