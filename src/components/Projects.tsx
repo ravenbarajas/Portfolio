@@ -288,6 +288,16 @@ const Projects = () => {
       link: "http://habitquest.free.nf/",
       type: "Personal",
     },
+    {
+      id: 28,
+      title: "Dental Appointment Scheduler",
+      description: "A system for scheduling dental appointments.",
+      details: "Provides a user-friendly interface for scheduling dental appointments.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://oralease.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
