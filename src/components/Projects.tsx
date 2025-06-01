@@ -308,6 +308,26 @@ const Projects = () => {
       link: "http://shelfsmart.free.nf/",
       type: "Personal",
     },
+    {
+      id: 30,
+      title: "Pet Care Management",
+      description: "A system for managing pet care and transactions.",
+      details: "Provides a user-friendly interface for managing pet care and transactions.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://furfriend.free.nf/",
+      type: "Personal",
+    },
+    {
+      id: 31,
+      title: "Smart Budget Tracker",
+      description: "A system for managing budget and transactions.",
+      details: "Provides a user-friendly interface for managing budget and transactions.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://budgetbuddy.free.nf/",
+      type: "Personal",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
