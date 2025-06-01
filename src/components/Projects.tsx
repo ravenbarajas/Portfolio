@@ -84,13 +84,13 @@ const Projects = () => {
     },
     {
       id: 8,
-      title: "Centscible",
-      description: "Budgeting app for tracking expenses and setting budgets.",
-      details:
-        "Provides tools for tracking expenses, setting budgets, and analyzing spending habits.",
-      technologies: ["React.js", "Django", "SQLite"],
-      link: "http://centscible.free.nf/",
+      title: "Smart Budget Tracker",
+      description: "A system for managing budget and transactions.",
+      details: 
+          "Provides a user-friendly interface for managing budget and transactions.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
       category: "Web Apps",
+      link: "http://budgetbuddy.free.nf/",
       type: "Personal",
     },
     {
@@ -316,16 +316,6 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "MongoDB"],
       category: "Web Apps",
       link: "http://furfriend.free.nf/",
-      type: "Personal",
-    },
-    {
-      id: 31,
-      title: "Smart Budget Tracker",
-      description: "A system for managing budget and transactions.",
-      details: "Provides a user-friendly interface for managing budget and transactions.",
-      technologies: ["React.js", "Node.js", "MongoDB"],
-      category: "Web Apps",
-      link: "http://budgetbuddy.free.nf/",
       type: "Personal",
     },
   ];
