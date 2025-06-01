@@ -111,7 +111,7 @@ const Projects = () => {
       details:
         "Tracks procurement processes, vendor contracts, and financial insights with real-time analytics and reporting tools.",
       technologies: ["React.js", "Laravel", "MySQL"],
-      link: "http://procurex.free.nf/",
+      link: "http://procuremate.free.nf/",
       category: "Dashboards",
       type: "Personal",
     },
@@ -296,7 +296,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "MongoDB"],
       category: "Web Apps",
       link: "http://oralease.free.nf/",
-      type: "Personal",
+      type: "Client",
     },
     {
       id: 29,
@@ -306,7 +306,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "MongoDB"],
       category: "Web Apps",
       link: "http://shelfsmart.free.nf/",
-      type: "Personal",
+      type: "Client",
     },
     {
       id: 30,
@@ -316,7 +316,17 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "MongoDB"],
       category: "Web Apps",
       link: "http://furfriend.free.nf/",
-      type: "Personal",
+      type: "Client",
+    },
+    {
+      id: 30,
+      title: "Chinese Restaurant Website",
+      description: "A website for a Chinese restaurant.",
+      details: "Provides a user-friendly interface for a Chinese restaurant.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://goldenwok.free.nf/",
+      type: "Client",
     },
   ];
 
