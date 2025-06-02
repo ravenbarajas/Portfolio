@@ -319,7 +319,7 @@ const Projects = () => {
       type: "Client",
     },
     {
-      id: 30,
+      id: 31,
       title: "Chinese Restaurant Website",
       description: "A website for a Chinese restaurant.",
       details: "Provides a user-friendly interface for a Chinese restaurant.",
