@@ -338,6 +338,26 @@ const Projects = () => {
       link: "http://carbonvision.free.nf/",
       type: "Client",
     },
+    {
+      id: 33,
+      title: "Automated Guest Services Platform",
+      description: "A website for a automated guest services platform.",
+      details: "Provides a user-friendly interface for a automated guest services platform.",
+      technologies: ["React.js", "Node.js", "MongoDB", "OpenAI API", "LangChain"],
+      category: "AI/ML",
+      link: "http://guestpal.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 34,
+      title: "Multi-Property Admin Suite",
+      description: "A website for a multi-property admin suite.",
+      details: "Provides a user-friendly interface for a multi-property admin suite.",
+      technologies: ["React.js", "Node.js", "PostgreSQL", "Express.js"],
+      category: "Dashboards",
+      link: "http://propertypilot.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
