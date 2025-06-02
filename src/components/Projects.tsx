@@ -328,6 +328,16 @@ const Projects = () => {
       link: "http://goldenwok.free.nf/",
       type: "Client",
     },
+    {
+      id: 32,
+      title: "Environmental Impact Monitor",
+      description: "A website for a environmental impact monitor.",
+      details: "Provides a user-friendly interface for a environmental impact monitor.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Dashboards",
+      link: "http://carbonvision.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
