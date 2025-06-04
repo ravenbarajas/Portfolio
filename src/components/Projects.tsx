@@ -358,6 +358,26 @@ const Projects = () => {
       link: "http://propertypilot.free.nf/",
       type: "Client",
     },
+    {
+      id: 35,
+      title: "Service Request & Job Ticketing Platform",
+      description: "A website for a service request & job ticketing platform.",
+      details: "Provides a user-friendly interface for a service request & job ticketing platform.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://fixmate.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 36,
+      title: "Walk-In Queue & Ticket System",
+      description: "A website for a walk-in queue & ticket system.",
+      details: "Provides a user-friendly interface for a walk-in queue & ticket system.",
+      technologies: ["React.js", "Node.js", "MongoDB"],
+      category: "Web Apps",
+      link: "http://queuetrackr.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
