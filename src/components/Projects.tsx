@@ -378,6 +378,26 @@ const Projects = () => {
       link: "http://queuetrackr.free.nf/",
       type: "Client",
     },
+    {
+      id: 37,
+      title: "Spare Parts Management System",
+      description: "A web application for management of spare parts inventory.",
+      details: "Provides features for tracking inventory and streamlining service requests and maintenance schedules.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB",],
+      category: "Web Apps",
+      link: "http://sparestack.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 38,
+      title: "Equipment & Tool Management Tracker",
+      description: "A web application for tracking and managing equipment and tools.",
+      details: "Provides real-time location tracking, check-in/check-out, inventory audits, and asset oversight.",
+      technologies: ["React.js", "Node.js", "MongoDB", "Express.js", "Barcode Scanning"],
+      category: "Web Apps",
+      link: "http://assetkit.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
