@@ -398,6 +398,26 @@ const Projects = () => {
       link: "http://assetkit.free.nf/",
       type: "Client",
     },
+    {
+      id: 39,
+      title: "Store Inventory Manager",
+      description: "A comprehensive web application for managing retail store inventory.",
+      details: "Features real-time stock tracking, barcode scanning, and a user-friendly interface for inventory control.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Barcode Scanning", "Data Analytics"],
+      category: "Web Apps",
+      link: "http://stocklite.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 40,
+      title: "Supply Restocking Notification System",
+      description: "An automated system for managing supply levels and generating restocking alerts.",
+      details: "Features real-time inventory tracking, customizable reorder thresholds, and tools for efficient supply chain management.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Data Analytics", "Automated Alerts"],
+      category: "Web Apps",
+      link: "http://restockly.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
