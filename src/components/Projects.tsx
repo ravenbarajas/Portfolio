@@ -438,7 +438,7 @@ const Projects = () => {
       details: "Enables businesses to gather, analyze, and respond to customer feedback and ratings, providing insights to improve services and products.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
-      link: "http://shiftwise.free.nf/",
+      link: "http://reviewradar.free.nf/",
       type: "Client",
     },
     {
@@ -448,7 +448,7 @@ const Projects = () => {
       details: "A platform for businesses to create, sell, and manage digital gift cards, fostering customer loyalty, and user-friendly features.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
-      link: "http://menusnap.free.nf/",
+      link: "http://simplygifted.free.nf/",
       type: "Client",
     },
   ];
