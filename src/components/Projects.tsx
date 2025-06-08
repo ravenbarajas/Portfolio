@@ -451,6 +451,26 @@ const Projects = () => {
       link: "http://simplygifted.free.nf/",
       type: "Client",
     },
+    {
+      id: 45,
+      title: "Skill Tutoring Platform",
+      description: "A platform connecting students with expert tutors.",
+      details: "Offers a platform where users can find, book, and engage with skilled tutors and a rating system for quality assurance.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://tutorlink.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 46,
+      title: "Handmade Goods E-commerce",
+      description: "An e-commerce platform for unique handmade goods.",
+      details: "A vibrant online marketplace connecting artisans with buyers and personalized shopping experiences for handmade items.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://craftmarket.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
