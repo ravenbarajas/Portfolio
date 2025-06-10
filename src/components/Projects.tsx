@@ -471,6 +471,26 @@ const Projects = () => {
       link: "http://craftmarket.free.nf/",
       type: "Client",
     },
+    {
+      id: 47,
+      title: "Pickup & Delivery Laundry Service",
+      description: "A convenient web application for on-demand laundry services.",
+      details: "Provides seamless scheduling of laundry pickups and deliveries, real-time order tracking, and secure payment options.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://laundrymate.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 48,
+      title: "Pre-order System for Takeout & Meal Prep",
+      description: "A specialized system for managing meal prep pre-orders.",
+      details: "Facilitates pre-ordering for restaurants and meal prep services, offering customizable menus, scheduled pickups/deliveries.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://mealmatch.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
