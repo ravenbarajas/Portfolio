@@ -22,7 +22,7 @@ const Projects = () => {
     {
       id: 2,
       title: "Roofing Company Website",
-      description: "Roofing company website with AI customer service chatbot.",
+      description: "Roofing company website wi+th AI customer service chatbot.",
       details: "Integrated an AI chatbot to offer instant customer support and address common inquiries.",
       technologies: ["React.js", "Node.js", "OpenAI API", "LangChain"],
       link: "http://heartland-roofing.free.nf/",
@@ -449,7 +449,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
       link: "http://simplygifted.free.nf/",
-      type: "Client",
+      type: "Personal",
     },
     {
       id: 45,
@@ -459,7 +459,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
       link: "http://tutorlink.free.nf/",
-      type: "Client",
+      type: "Personal",
     },
     {
       id: 46,
@@ -469,7 +469,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
       link: "http://craftmarket.free.nf/",
-      type: "Client",
+      type: "Personal",
     },
     {
       id: 47,
@@ -479,7 +479,7 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
       link: "http://laundrymate.free.nf/",
-      type: "Client",
+      type: "Personal",
     },
     {
       id: 48,
@@ -489,6 +489,26 @@ const Projects = () => {
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
       link: "http://mealmatch.free.nf/",
+      type: "Personal",
+    },
+    {
+      id: 49,
+      title: "Direct Produce Ordering",
+      description: "A direct ordering system for fresh produce from local farms.",
+      details: "Connects consumers and businesses directly with local farms, offering customizable baskets and subscription options.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://purelypicked.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 50,
+      title: "Clothing Alteration Status App",
+      description: "A mobile-friendly app for tracking clothing alteration orders.",
+      details: "Allows customers to check the status of their alteration orders, receive notifications and communicate with the tailor.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://tailormade.free.nf/",
       type: "Client",
     },
   ];
