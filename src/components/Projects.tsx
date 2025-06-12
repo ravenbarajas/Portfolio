@@ -511,6 +511,26 @@ const Projects = () => {
       link: "http://tailormade.free.nf/",
       type: "Client",
     },
+    {
+      id: 51,
+      title: "Community Coffee Shop Loyalty Portal",
+      description: "A loyalty program portal for a community coffee shop.",
+      details: "Engages customers with a reward-based loyalty system, tracking purchases, offering exclusive deals, and a user-friendly web interface.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://brewlocal.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 52,
+      title: "Home Renovation & Material Estimator",
+      description: "A tool for estimating home renovation costs and materials.",
+      details: "Provides users with comprehensive estimates for home renovation projects, including detailed material breakdowns and cost projections.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://buildquote.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
