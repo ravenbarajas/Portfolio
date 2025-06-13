@@ -531,6 +531,26 @@ const Projects = () => {
       link: "http://buildquote.free.nf/",
       type: "Client",
     },
+    {
+      id: 53,
+      title: "Gadget Repair Tracker",
+      description: "Comprehensive tool for tracking and managing gadget repairs.",
+      details: "Provides users with a detailed tracking system for gadget repairs, including repair status updates, cost estimates, and service history.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://repairlogix.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 54,
+      title: "Equipment Booking Platform",
+      description: "A platform for booking and managing equipment rentals.",
+      details: "Offers a streamlined booking system for equipment rentals, featuring availability checks, reservation management, and user-friendly interface.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://gearrentalHub.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
