@@ -539,13 +539,42 @@ body.dark-mode .logo {
   transition-delay: 0.2s;
 }
 
+.about-description-header {
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  transition: color var(--transition-medium);
+  position: relative;
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--color-primary);
+  text-align: justify;
+  line-height: 1.6;
+}
+
 .about-description {
   font-size: 1.2rem;
   color: var(--color-text-secondary);
   transition: color var(--transition-medium);
   position: relative;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.skills-description-header {
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  transition: color var(--transition-medium);
+  position: relative;
   padding-left: var(--space-4);
   border-left: 3px solid var(--color-primary);
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.skills-description {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-medium);
+  position: relative;
   text-align: justify;
   line-height: 1.6;
 }

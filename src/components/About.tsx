@@ -31,9 +31,12 @@ const About = () => {
           <div className="section-line"></div>
         </div>
         <div className="about-sections">
-            <div className="about-description">
-                <strong>An AI/ML Engineer with a strong background in Software development, </strong> I am passionate about creating impactful, data -driven solutions. My experience includes building applications, working with large datasets, and developing intelligent systems leveraging AI. Known for my problem-solving abilities, attention to detail, and ability to quickly learn new technologies, I excel in collaborative environments and have a proven track record of leading teams on projects.With strong communication and interpersonal skills, I am adept at guiding team members, fostering a positive work culture, and ensuring alignment with project goals to deliver inno vative solutions.
-            </div>
+          <div className="about-description-header">
+              <strong>An AI/ML Engineer with a strong background in Software development </strong> 
+          </div>
+          <div className="about-description">
+            I am passionate about creating impactful, data -driven solutions. My experience includes building applications, working with large datasets, and developing intelligent systems leveraging AI. Known for my problem-solving abilities, attention to detail, and ability to quickly learn new technologies, I excel in collaborative environments and have a proven track record of leading teams on projects.With strong communication and interpersonal skills, I am adept at guiding team members, fostering a positive work culture, and ensuring alignment with project goals to deliver inno vative solutions.
+          </div>
         </div>
         <div className="hero-stats">
           <div className="stat-item">
