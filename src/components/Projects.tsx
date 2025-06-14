@@ -613,8 +613,11 @@ const Projects = () => {
   return (
     <section className="projects" id="projects">
       <div className="container">
-        <h2>Featured Projects</h2>
-        <p className="section-subtitle">Some of my recent work</p>
+        <div className="section-header">
+          <div className="section-line"></div>
+            <h2>Featured Projects</h2>
+          <div className="section-line"></div>
+        </div>
 
         <div className="category-toggle" style={{
           display: 'flex',

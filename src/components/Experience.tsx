@@ -43,8 +43,11 @@ const Experience = () => {
   return (
     <section className="experience" id="experience">
       <div className="container">
-        <h2>Work Experience</h2>
-        <p className="section-subtitle">My professional journey</p>
+        <div className="section-header">
+          <div className="section-line"></div>
+            <h2>Work Experience</h2>
+          <div className="section-line"></div>
+        </div>
 
         <div className="timeline" ref={timelineRef}>
           {experiences.map((exp, index) => (

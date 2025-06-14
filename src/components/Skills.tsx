@@ -6,8 +6,11 @@ const Skills = () => {
   return (
     <section className="skills" id="skills">
       <div className="container">
-        <h2>Skills & Technologies</h2>
-        <p className="section-subtitle">The tools and technologies I work with</p>
+        <div className="section-header">
+          <div className="section-line"></div>
+            <h2>Skills & Technologies</h2>
+          <div className="section-line"></div>
+        </div>
 
         <div className="skills-grid">
           <div className="skill-category">
@@ -23,7 +26,11 @@ const Skills = () => {
               <span className="tag">Scikit-learn</span>
               <span className="tag">PyTorch</span>
               <span className="tag">Databricks</span>
-              <span className="tag">FAISS</span>
+              <span className="tag">Chroma</span>
+              <span className="tag">Keras</span>
+              <span className="tag">spaCy</span>
+              <span className="tag">OpenCV</span>
+              <span className="tag">Haystack</span>
             </div>
           </div>
 

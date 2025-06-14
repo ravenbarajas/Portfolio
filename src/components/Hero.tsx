@@ -42,10 +42,7 @@ const Hero = () => {
               <br />
               <span className={`title ${animateText ? 'animate' : ''}`}>AI/ML Engineer | Software Developer</span>
             </h1>
-            <p className="hero-description">
-              I build intelligent and data-driven systems that solve real-world problems. Specializing in generative AI, data analytics,
-              and software development.
-            </p>
+
             <div className="location">
               <LocationPin />
               <span>National Capital Region, PH</span>
@@ -67,29 +64,6 @@ const Hero = () => {
                 Download CV
               </a>
             </div>
-          </div>
-        </div>
-        
-        <div className={`hero-actions-container ${isLoaded ? 'loaded' : ''}`}>
-          <div className="hero-meta">
-            <div className="hero-badge">
-              <span>Available for new projects</span>
-            </div>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <span className="stat-number">20+</span>
-                <span className="stat-label">Projects</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">3+</span>
-                <span className="stat-label">Years</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">7+</span>
-                <span className="stat-label">Clients</span>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
