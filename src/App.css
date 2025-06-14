@@ -539,6 +539,10 @@ body.dark-mode .logo {
   transition-delay: 0.2s;
 }
 
+.about-section {
+  margin-bottom: var(--space-4);
+}
+
 .about-description-header {
   font-size: 1.2rem;
   color: var(--color-text-primary);
@@ -548,6 +552,7 @@ body.dark-mode .logo {
   border-left: 3px solid var(--color-primary);
   text-align: justify;
   line-height: 1.6;
+  margin-bottom: var(--space-4);
 }
 
 .about-description {
@@ -568,6 +573,7 @@ body.dark-mode .logo {
   border-left: 3px solid var(--color-primary);
   text-align: justify;
   line-height: 1.6;
+  margin-bottom: var(--space-4);
 }
 
 .skills-description {
@@ -577,6 +583,10 @@ body.dark-mode .logo {
   position: relative;
   text-align: justify;
   line-height: 1.6;
+}
+
+.skills-section {
+  margin-bottom: var(--space-4);
 }
 
 .location {

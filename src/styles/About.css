@@ -85,45 +85,6 @@
   }
 }
 
-.about-sections {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-6);
-}
-
-.about-section {
-  background-color: var(--color-background);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  padding: var(--space-6);
-  box-shadow: var(--shadow);
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
-}
-
-body.dark-mode .about-section {
-  background-color: #1e1e1e;
-}
-
-.about-section:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border-color: var(--color-primary);
-}
-
-.about-section h2 {
-  font-size: 1.8rem;
-  color: var(--color-primary);
-}
-
-.about-section p,
-.about-section ul {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--color-text-secondary);
-}
-
 .skills-list {
   list-style: none;
   padding-left: 0;
