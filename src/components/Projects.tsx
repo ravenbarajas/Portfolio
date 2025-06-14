@@ -615,7 +615,7 @@ const Projects = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-line"></div>
-            <h2>Featured Projects</h2>
+            <h1>Featured Projects</h1>
           <div className="section-line"></div>
         </div>
 

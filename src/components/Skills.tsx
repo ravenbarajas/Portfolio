@@ -1,6 +1,18 @@
-import { BrainCircuit } from 'lucide-react';
-import { Code } from "./icons/Code"
-import { ChartSpline } from 'lucide-react';
+import React from 'react';
+import Marquee from "react-fast-marquee";
+
+// Import AI/ML skill logos
+import chromaLogo from "../assets/chroma-logo.png";
+import databricksLogo from "../assets/databricks-logo.png";
+import haystackLogo from "../assets/haystack-logo.png";
+import kerasLogo from "../assets/keras-logo.png";
+import langchainLogo from "../assets/langchain-logo.png";
+import mlflowLogo from "../assets/mlflow-logo.png";
+import openaiLogo from "../assets/openai-logo.png";
+import opencvLogo from "../assets/opencv-logo.png";
+import pytorchLogo from "../assets/pytorch-logo.png";
+import scikitlearnLogo from "../assets/scikitlearn-logo.png";
+import spacyLogo from "../assets/spacy-logo.png";
 
 const Skills = () => {
   return (
@@ -8,70 +20,25 @@ const Skills = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-line"></div>
-            <h2>Skills & Technologies</h2>
+            <h1>Skills & Technologies</h1>
           <div className="section-line"></div>
         </div>
+        <Marquee className="skills-marquee" speed={25}>
+          <img src={chromaLogo} alt="Chroma Logo" />
+          <img src={databricksLogo} alt="Databricks Logo" />
+          <img src={haystackLogo} alt="Haystack Logo" />
+          <img src={kerasLogo} alt="Keras Logo" />
+          <img src={langchainLogo} alt="Langchain Logo" />
+        </Marquee>
+        <Marquee className="skills-marquee" direction="right" speed={25}>
+          <img src={mlflowLogo} alt="MLflow Logo" />
+          <img src={openaiLogo} alt="OpenAI Logo" />
+          <img src={opencvLogo} alt="OpenCV Logo" />
+          <img src={pytorchLogo} alt="PyTorch Logo" />
+          <img src={scikitlearnLogo} alt="Scikit-learn Logo" />
+          <img src={spacyLogo} alt="spaCy Logo" />
+        </Marquee>
 
-        <div className="skills-grid">
-          <div className="skill-category">
-            <div className="skill-header">
-              <BrainCircuit />
-              <h3>AI & Machine Learning</h3>
-            </div>
-            <div className="skill-tags">
-              <span className="tag">LangChain</span>
-              <span className="tag">Hugging Face Transformers</span>
-              <span className="tag">Open AI</span>
-              <span className="tag">MLflow</span>
-              <span className="tag">Scikit-learn</span>
-              <span className="tag">PyTorch</span>
-              <span className="tag">Databricks</span>
-              <span className="tag">Chroma</span>
-              <span className="tag">Keras</span>
-              <span className="tag">spaCy</span>
-              <span className="tag">OpenCV</span>
-              <span className="tag">Haystack</span>
-            </div>
-          </div>
-
-          <div className="skill-category">
-            <div className="skill-header">
-              <ChartSpline  />
-              <h3>Data Analytics & Visualization</h3>
-            </div>
-            <div className="skill-tags">
-              <span className="tag">SQL/NOSQL</span>
-              <span className="tag">Python</span>
-              <span className="tag">Pandas</span>
-              <span className="tag">NumPy</span>
-              <span className="tag">Plotly</span>
-              <span className="tag">Seaborn</span>
-              <span className="tag">Matplotlib</span>
-              <span className="tag">Tableau</span>
-            </div>
-          </div>
-
-          <div className="skill-category">
-            <div className="skill-header">
-              <Code />
-              <h3>Software Development</h3>
-            </div>
-            <div className="skill-tags">
-              <span className="tag">React.js</span>
-              <span className="tag">TypeScript</span>
-              <span className="tag">HTML</span>
-              <span className="tag">CSS</span>
-              <span className="tag">PHP</span>
-              <span className="tag">Flask</span>
-              <span className="tag">Laravel</span>
-              <span className="tag">FastAPI</span>
-              <span className="tag">RESTful APIs</span>
-              <span className="tag">MySQL</span>
-              <span className="tag">PostgreSQL</span>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
   )

@@ -45,7 +45,7 @@ const Experience = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-line"></div>
-            <h2>Work Experience</h2>
+            <h1>Work Experience</h1>
           <div className="section-line"></div>
         </div>
 

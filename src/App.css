@@ -174,8 +174,8 @@ section {
   padding: 0 var(--space-4); /* Add padding for small screens */
 }
 
-.section-header h2 {
-  font-size: 2.5rem;
+.section-header h1 {
+  font-size: 3rem;
   margin-left: var(--space-4);
   margin-right: var(--space-4);
   color: var(--color-text);
@@ -506,6 +506,7 @@ body.dark-mode .logo {
 
 .hero h1 .name {
   display: inline-block;
+  font-size: 5rem;
   font-weight: 700;
   background: linear-gradient(to right, var(--color-primary), var(--color-text));
   background-size: 200% auto;
@@ -541,21 +542,12 @@ body.dark-mode .logo {
 .about-description {
   font-size: 1.2rem;
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-5);
   transition: color var(--transition-medium);
   position: relative;
   padding-left: var(--space-4);
   border-left: 3px solid var(--color-primary);
-}
-
-.hero-description {
-  font-size: 1.2rem;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-5);
-  transition: color var(--transition-medium);
-  position: relative;
-  padding-left: var(--space-4);
-  border-left: 3px solid var(--color-primary);
+  text-align: justify;
+  line-height: 1.6;
 }
 
 .location {
@@ -642,8 +634,10 @@ body.dark-mode .logo {
 }
 
 .hero-stats {
-  display: flex;
-  gap: var(--space-5);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for three stat items */
+  gap: var(--space-4); /* Adjust gap between cards */
+  width: 100%;
 }
 
 .stat-item {
@@ -651,18 +645,26 @@ body.dark-mode .logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--space-2);
-  position: relative;
+  padding: var(--space-4) var(--space-3); /* Adjust padding for card look */
+  background-color: rgba(157, 124, 235, 0.05);
+  border: 1px solid var(--color-border); /* Card border */
+  border-radius: var(--radius); /* Rounded corners for cards */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Keep relative for potential future use, though after is removed */
+}
+
+body.dark-mode .stat-item {
+  background-color: rgba(157, 124, 235, 0.05);
+}
+
+.stat-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
 }
 
 .stat-item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -2px;
-  top: 20%;
-  height: 60%;
-  width: 1px;
-  background-color: rgba(157, 124, 235, 0.2);
+  content: none; /* Remove the vertical line */
 }
 
 .stat-number {
@@ -718,6 +720,7 @@ body.dark-mode .logo {
   .hero-stats {
     width: 100%;
     justify-content: space-around;
+    grid-template-columns: 1fr; /* Stack items vertically on small screens */
   }
   
   .stat-item:not(:last-child)::after {
@@ -1154,4 +1157,11 @@ body.dark-mode .project-card {
   transform: translateY(-2px); /* Move up slightly on hover */
   background-color: var(--color-primary); /* Change to primary color on hover */
   border-color: var(--color-primary); /* Change border color on hover */
+}
+
+.skills-marquee img {
+  height: 70px; /* Consistent height for all logos */
+  width: auto; /* Maintain aspect ratio */
+  margin: 0 20px; /* Adjust margin between images */
+  object-fit: contain; /* Ensure images fit within their dimensions without cropping */
 }

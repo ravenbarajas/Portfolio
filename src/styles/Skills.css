@@ -28,3 +28,35 @@
   }
 }
 
+.skills-marquee {
+  margin-top: var(--space-8);
+}
+
+.skills-marquee .menu-wrap {
+  height: 100px; /* Adjust height as needed */
+}
+
+.skills-marquee .menu__item-link {
+  display: none;
+}
+
+.skills-marquee .marquee {
+  transform: translate3d(0, 0%, 0); /* Ensure marquee is always visible */
+  background: none; /* No background needed if only showing images */
+}
+
+.skills-marquee .marquee__inner {
+  animation: marquee 30s linear infinite; /* Adjust speed as needed */
+}
+
+.skills-marquee .marquee__img {
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height to make them square */
+  margin: 0 1vw; /* Adjust margin between images */
+  padding: 0;
+  border-radius: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

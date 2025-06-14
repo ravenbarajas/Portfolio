@@ -27,40 +27,26 @@ const About = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-line"></div>
-            <h2>About Me</h2>
+            <h1>About Me</h1>
           <div className="section-line"></div>
         </div>
-        <div className="about-description">
-          <p>
-            I am an AI/ML Engineer passionate about creating impactful, data-driven solutions, specializing in generative AI, data analytics, and software development. My expertise lies in building intelligent systems, working with large datasets, and developing robust applications.
-          </p>
-          <p>
-            Known for my problem-solving abilities, attention to detail, and quick learning, I thrive in collaborative environments. I have a proven track record of leading teams and fostering a positive work culture.
-          </p>
-          <p>
-            My professional experience includes significant contributions to Generative AI applications and maintaining robust CI/CD pipelines. I also played a key role in developing internal software tools that improved operational efficiency for over a thousand users.
-          </p>
+        <div className="about-sections">
+            <div className="about-description">
+                <strong>An AI/ML Engineer with a strong background in Software development, </strong> I am passionate about creating impactful, data -driven solutions. My experience includes building applications, working with large datasets, and developing intelligent systems leveraging AI. Known for my problem-solving abilities, attention to detail, and ability to quickly learn new technologies, I excel in collaborative environments and have a proven track record of leading teams on projects.With strong communication and interpersonal skills, I am adept at guiding team members, fostering a positive work culture, and ensuring alignment with project goals to deliver inno vative solutions.
+            </div>
         </div>
-        <div className={`hero-actions-container ${isLoaded ? 'loaded' : ''}`}>
-          <div className="hero-meta">
-            <div className="hero-badge">
-              <span>Available for new projects</span>
-            </div>
-            <div className="hero-stats">
-              <div className="stat-item">
-                <span className="stat-number">20+</span>
-                <span className="stat-label">Projects</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">3+</span>
-                <span className="stat-label">Years</span>
-              </div>
-              <div className="stat-item">
-                <span className="stat-number">7+</span>
-                <span className="stat-label">Clients</span>
-              </div>
-            </div>
-
+        <div className="hero-stats">
+          <div className="stat-item">
+            <span className="stat-number">15+</span>
+            <span className="stat-label">Client Projects</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">3+</span>
+            <span className="stat-label">Years of Experience</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">7+</span>
+            <span className="stat-label">Clients</span>
           </div>
         </div>
       </div>
