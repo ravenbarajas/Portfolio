@@ -82,7 +82,7 @@ const Projects = () => {
     {
       id: 8,
       title: "Smart Budget Tracker",
-      description: "A web application for intelligent personal finance management.",
+      description: "An intelligent web app for personal finance management.",
       details: "Offers comprehensive tools for tracking income and expenses, setting budgets, categorizing transactions, and providing financial insights.",
       technologies: ["React.js", "Node.js", "MongoDB", "Data Analytics"],
       category: "Web Apps",
@@ -92,7 +92,7 @@ const Projects = () => {
     {
       id: 9,
       title: "Insights Dashboard",
-      description: "A dynamic dashboard providing real-time analytics and comprehensive reporting.",
+      description: "A dynamic dashboard with analytics and reporting.",
       details: "Offers customizable visualizations for tracking key performance indicators, analyzing trends, and gaining actionable insights.",
       technologies: ["React.js", "Laravel", "MySQL", "Data Visualization", "Reporting"],
       link: "http://analytiqx.free.nf/",
@@ -384,7 +384,7 @@ const Projects = () => {
     {
       id: 38,
       title: "Equipment & Tool Management Tracker",
-      description: "A web application for tracking and managing equipment and tools.",
+      description: "A web app for tracking equipment and tools.",
       details: "Provides real-time location tracking, check-in/check-out, inventory audits, and asset oversight.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
@@ -394,7 +394,7 @@ const Projects = () => {
     {
       id: 39,
       title: "Store Inventory Manager",
-      description: "A comprehensive web application for managing retail store inventory.",
+      description: "A web app for managing retail store inventory.",
       details: "Features real-time stock tracking, barcode scanning, and a user-friendly interface for inventory control.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
