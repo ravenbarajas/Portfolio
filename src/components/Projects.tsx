@@ -551,6 +551,26 @@ const Projects = () => {
       link: "http://gearrentalHub.free.nf/",
       type: "Client",
     },
+    {
+      id: 55,
+      title: "Booking for Cleaning Services",
+      description: "A platform for scheduling cleaning services.",
+      details: "Facilitates seamless booking for cleaning services, offering service packages, secure payment options, and real-time appointment tracking.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://broomboom.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 56,
+      title: "Local Snack Subscription & Delivery",
+      description: "A subscription and delivery service for local snacks.",
+      details: "Offers a selection of local snacks through a subscription model, providing convenient home delivery and supporting local businesses.",
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://snackcycle.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
