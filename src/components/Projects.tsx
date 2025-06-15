@@ -571,6 +571,26 @@ const Projects = () => {
       link: "http://snackcycle.free.nf/",
       type: "Client",
     },
+    {
+      id: 57,
+      title: "Shoe Repair & Customization Booking",
+      description: "A booking platform for shoe repair services.",
+      details: "Schedule appointments for shoe repair and customization, offering various service options and a gallery for custom designs.",      
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://shoesavvy.free.nf/",
+      type: "Client",
+    },
+    {
+      id: 58,
+      title: "Water Refill Delivery Tracker",
+      description: "A tracking system for water refill deliveries.",
+      details: "Provides updates on water refill orders, enabling customers to track their delivery status and subscriptions efficiently.",      
+      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
+      category: "Web Apps",
+      link: "http://freshfix.free.nf/",
+      type: "Client",
+    },
   ];
 
   const projectsPerPage = 4; // 2x2 grid
