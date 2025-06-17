@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 
 // Import AI/ML skill logos - Dark Mode

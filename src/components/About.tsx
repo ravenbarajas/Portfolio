@@ -1,27 +1,6 @@
-import Card from "./ui/Card"
-import { useEffect, useState } from "react";
 import "../styles/About.css"
 
 const About = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [animateText, setAnimateText] = useState(false);
-
-  useEffect(() => {
-    // Stagger animations for a more polished entrance
-    const loadTimer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 100);
-    
-    const textTimer = setTimeout(() => {
-      setAnimateText(true);
-    }, 400);
-    
-    return () => {
-      clearTimeout(loadTimer);
-      clearTimeout(textTimer);
-    };
-  }, []);
-
   return (
     <section id="about" className="about">
       <div className="container">

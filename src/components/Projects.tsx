@@ -404,7 +404,7 @@ const Projects = () => {
     {
       id: 40,
       title: "Supply Restocking Notification System",
-      description: "An automated system for managing supply levels and generating alerts.",
+      description: "A system for managing supply and generating alerts.",
       details: "Features real-time inventory tracking, customizable reorder thresholds, and tools for efficient supply chain management.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
@@ -414,7 +414,7 @@ const Projects = () => {
     {
       id: 41,
       title: "Employee Shift & Attendance Scheduler",
-      description: "A web application for employee shift scheduling and attendance tracking.",
+      description: "A web app for shift scheduling and attendance tracking.",
       details: "Provides features for creating and managing work schedules with drag-and-drop simplicity accessible via a user-friendly mobile interface.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
@@ -424,7 +424,7 @@ const Projects = () => {
     {
       id: 42,
       title: "Digital Menu + QR Code Generator",
-      description: "A web application for creating dynamic digital menus and generating QR codes.",
+      description: "A web app for digital menus by generating QR codes.",
       details: "Enables restaurants to create customizable digital menus with real-time updates, QR code to enhance dining experience and efficiency.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",
@@ -434,7 +434,7 @@ const Projects = () => {
     {
       id: 43,
       title: "Feedback & Rating Manager",
-      description: "A web application for collecting and managing feedback and ratings.",
+      description: "A web app for managing feedback and ratings.",
       details: "Enables businesses to gather, analyze, and respond to customer feedback and ratings, providing insights to improve services and products.",
       technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
       category: "Web Apps",

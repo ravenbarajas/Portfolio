@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Github } from '../../src/components/icons/Github';
 import { Linkedin } from '../../src/components/icons/Linkedin';
 
