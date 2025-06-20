@@ -663,14 +663,7 @@ const Projects = () => {
           <div className="section-line"></div>
         </div>
 
-        <div className="category-toggle" style={{
-          display: 'flex',
-          justifyContent: 'center',
-          marginBottom: '20px',
-          gap: '10px',
-          width: 'fit-content',
-          margin: '0 auto 20px'
-        }}>
+        <div className="category-toggle">
           {categories.map(category => (
             <button
               key={category}
@@ -680,7 +673,6 @@ const Projects = () => {
               className={`category-button ${selectedCategory === category ? "active" : ""}`}
               style={{
                 padding: 'var(--space-1) var(--space-3)',
-                minWidth: '150px',
                 border: 'none',
                 borderRadius: '9999px',
                 backgroundColor: selectedCategory === category ? 'var(--color-primary)' : 'var(--color-tag-bg)',

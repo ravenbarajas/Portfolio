@@ -1270,3 +1270,24 @@ body.dark-mode .project-card {
   margin-top: var(--space-3);
   justify-content: start; /* Center the skill tags */
 }
+
+.category-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+
+.category-button {
+  min-width: 120px; /* Adjust min-width for better responsiveness */
+  flex-grow: 1; /* Allow buttons to grow to fill space */
+  max-width: 150px; /* Limit max width for larger screens */
+}
+
+.category-button.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
