@@ -630,6 +630,30 @@ const Projects = () => {
     }
   };
 
+  const handleMouseEnterCategoryButton = (e: React.MouseEvent<HTMLButtonElement>, category: string) => {
+    e.currentTarget.style.transform = 'translateY(-2px)';
+    e.currentTarget.style.backgroundColor = 'var(--color-primary)';
+  };
+
+  const handleMouseLeaveCategoryButton = (e: React.MouseEvent<HTMLButtonElement>, category: string) => {
+    e.currentTarget.style.transform = 'translateY(0)';
+    e.currentTarget.style.backgroundColor = selectedCategory === category ? 'var(--color-primary)' : 'var(--color-tag-bg)';
+  };
+
+  const handleMouseEnterPaginationButton = (e: React.MouseEvent<HTMLButtonElement>, isNext: boolean) => {
+    const shouldAnimate = (isNext && currentPage < totalPages) || (!isNext && currentPage > 1);
+    if (shouldAnimate) {
+      e.currentTarget.style.transform = 'translateY(-2px)';
+    }
+  };
+
+  const handleMouseLeavePaginationButton = (e: React.MouseEvent<HTMLButtonElement>, isNext: boolean) => {
+    const shouldAnimate = (isNext && currentPage < totalPages) || (!isNext && currentPage > 1);
+    if (shouldAnimate) {
+      e.currentTarget.style.transform = 'translateY(0)';
+    }
+  };
+
   return (
     <section className="projects" id="projects">
       <div className="container">
@@ -667,21 +691,15 @@ const Projects = () => {
                 lineHeight: '1.6',
                 transition: 'transform var(--transition-medium), background-color var(--transition-medium)',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.backgroundColor = 'var(--color-primary)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.backgroundColor = selectedCategory === category ? 'var(--color-primary)' : 'var(--color-tag-bg)';
-              }}
+              onMouseEnter={(e) => handleMouseEnterCategoryButton(e, category)}
+              onMouseLeave={(e) => handleMouseLeaveCategoryButton(e, category)}
             >
               {category}
             </button>
           ))}
         </div>
 
-        <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' }}>
+        <div className="projects-grid">
           {currentProjects.map((project) => (
             <a
               key={project.id}
@@ -734,12 +752,8 @@ const Projects = () => {
                 opacity: currentPage === 1 ? 0.5 : 1,
                 pointerEvents: currentPage === 1 ? 'none' : 'auto',
               }}
-              onMouseEnter={(e) => {
-                if (currentPage > 1) e.currentTarget.style.transform = 'translateY(-2px)';
-              }}
-              onMouseLeave={(e) => {
-                if (currentPage > 1) e.currentTarget.style.transform = 'translateY(0)';
-              }}
+              onMouseEnter={(e) => handleMouseEnterPaginationButton(e, false)}
+              onMouseLeave={(e) => handleMouseLeavePaginationButton(e, false)}
             >
               <ChevronLeft size={20} />
             </button>
@@ -762,12 +776,8 @@ const Projects = () => {
                 opacity: currentPage === totalPages ? 0.5 : 1,
                 pointerEvents: currentPage === totalPages ? 'none' : 'auto',
               }}
-               onMouseEnter={(e) => {
-                if (currentPage < totalPages) e.currentTarget.style.transform = 'translateY(-2px)';
-              }}
-              onMouseLeave={(e) => {
-                if (currentPage < totalPages) e.currentTarget.style.transform = 'translateY(0)';
-              }}
+               onMouseEnter={(e) => handleMouseEnterPaginationButton(e, true)}
+              onMouseLeave={(e) => handleMouseLeavePaginationButton(e, true)}
             >
               <ChevronRight size={20} />
             </button>
