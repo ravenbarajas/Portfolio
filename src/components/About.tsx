@@ -1,7 +1,6 @@
 import "../styles/About.css"
 import profileImage from "../assets/gradpic.png"; // Import the profile image
 import { useEffect, useState } from "react";
-import AboutSkills from "./AboutSkills"; // Import the new AboutSkills component
 
 const statsData = [
   { id: 1, number: "15+", label: "Client Projects" },
@@ -67,7 +66,6 @@ const About = () => {
             </div>
           ))}
         </div>
-        <AboutSkills />
       </div>
     </section>
   )

@@ -121,6 +121,52 @@ import lightvercelLogo from "../assets/skill-light-logo/vercel-logo.png";
 import lightrailwayLogo from "../assets/skill-light-logo/railway-logo.png";
 import lightnetlifyLogo from "../assets/skill-light-logo/netlify-logo.png";
 
+interface SkillCategory {
+  title: string;
+  skills: string[];
+}
+
+const skillData: SkillCategory[] = [
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      "Chroma", "Databricks", "Haystack", "Keras", "Langchain",
+      "Hugging Face", "MLflow", "OpenAI", "OpenCV", "PyTorch",
+      "Scikit-learn", "spaCy"
+    ],
+  },
+  {
+    title: "Data Analytics & Visualization",
+    skills: [
+      "Matplotlib", "NumPy", "Pandas", "Plotly", "Python",
+      "SciPy", "Seaborn", "SQL"
+    ],
+  },
+  {
+    title: "Frontend",
+    skills: [
+      "HTML", "CSS", "JavaScript", "TypeScript", "ReactJS",
+      "Tailwind CSS", "Vite"
+    ],
+  },
+  {
+    title: "Backend, API & Databases",
+    skills: [
+      "Flask", "FastAPI", "Laravel", "PHP", "Node.js",
+      "Express.js", "RESTful API", "MySQL", "PostgreSQL", "MongoDB",
+      "SQLite"
+    ],
+  },
+  {
+    title: "DevOps, Cloud, Testing & Integrations",
+    skills: [
+      "Git", "Docker", "Kubernetes", "Stripe", "PayPal",
+      "Firebase", "AWS", "Postman", "Pytest", "Vercel",
+      "Railway", "Netlify"
+    ],
+  },
+];
+
 const Skills = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -154,9 +200,6 @@ const Skills = () => {
           <div className="skills-description-header">
             <h3>AI & Machine Learning</h3>
           </div>
-          <div className="skills-description">
-            <p>Proficient in AI/ML, I leverage diverse techniques and frameworks to build, train, and deploy intelligent systems effectively.</p>
-          </div>
           <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? chromaLogo : lightchromaLogo} alt="Chroma Logo" />
             <img src={isDarkMode ? databricksLogo : lightdatabricksLogo} alt="Databricks Logo" />
@@ -173,15 +216,19 @@ const Skills = () => {
             <img src={isDarkMode ? scikitlearnLogo : lightscikitlearnLogo} alt="Scikit-learn Logo" />
             <img src={isDarkMode ? spacyLogo : lightspacyLogo} alt="spaCy Logo" />
           </Marquee>
+          <div className="skills-list-about">
+            {skillData[0].skills.map((skill, skillIndex) => (
+              <span key={skillIndex} className="skill-tag-about">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="skills-section">
           {/* Data Analytics & Visualization Section */}
           <div className="skills-description-header">
             <h3>Data Analytics & Visualization</h3>
-          </div>
-          <div className="skills-description">
-            <p>Skilled in transforming complex data into actionable insights through robust analysis and compelling visualizations, driving informed decision-making.</p>
           </div>
           <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? matplotlibLogo : lightmatplotlibLogo} alt="Matplotlib Logo" />
@@ -193,15 +240,19 @@ const Skills = () => {
             <img src={isDarkMode ? seabornLogo : lightseabornLogo} alt="Seaborn Logo" />
             <img src={isDarkMode ? sqlLogo : lightsqlLogo} alt="SQL Logo" />
           </Marquee>
+          <div className="skills-list-about">
+            {skillData[1].skills.map((skill, skillIndex) => (
+              <span key={skillIndex} className="skill-tag-about">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Software Development Section */}
         <div className="skills-section">
           <div className="skills-description-header">
             <h3>Software Development</h3>
-          </div>
-          <div className="skills-description">
-            <p>Experienced in developing robust and scalable applications across diverse domains, from dynamic frontend interfaces to powerful backend systems and seamless cloud deployments.</p>
           </div>
 
           {/* Frontend Marquee */}
@@ -214,6 +265,13 @@ const Skills = () => {
             <img src={isDarkMode ? tailwindLogo : lighttailwindLogo} alt="Tailwind CSS Logo" />
             <img src={isDarkMode ? viteLogo : lightviteLogo} alt="Vite Logo" />
           </Marquee>
+          <div className="skills-list-about">
+            {skillData[2].skills.map((skill, skillIndex) => (
+              <span key={skillIndex} className="skill-tag-about">
+                {skill}
+              </span>
+            ))}
+          </div>
 
           {/* Backend, API & Databases Marquee */}
           <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
@@ -229,6 +287,13 @@ const Skills = () => {
             <img src={isDarkMode ? mongodbLogo : lightmongodbLogo} alt="MongoDB Logo" />
             <img src={isDarkMode ? sqliteLogo : lightsqliteLogo} alt="SQLite Logo" />
           </Marquee>
+          <div className="skills-list-about">
+            {skillData[3].skills.map((skill, skillIndex) => (
+              <span key={skillIndex} className="skill-tag-about">
+                {skill}
+              </span>
+            ))}
+          </div>
 
           {/* DevOps, Cloud, Testing & Integrations Marquee */}
           <Marquee className="skills-marquee" speed={25} direction="right" gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
@@ -245,6 +310,13 @@ const Skills = () => {
             <img src={isDarkMode ? railwayLogo : lightrailwayLogo} alt="Railway Logo" />
             <img src={isDarkMode ? netlifyLogo : lightnetlifyLogo} alt="Netlify Logo" />
           </Marquee>
+          <div className="skills-list-about">
+            {skillData[4].skills.map((skill, skillIndex) => (
+              <span key={skillIndex} className="skill-tag-about">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
 
       </div>
