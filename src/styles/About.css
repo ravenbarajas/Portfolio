@@ -30,58 +30,90 @@
 }
 
 .about-stats {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--space-5);
+  margin-top: var(--space-8);
+  padding: 0 var(--space-4);
 }
 
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.stat-item {
+  background-color: var(--color-card-background);
+  border-radius: var(--radius-lg); /* Slightly larger radius for a softer look */
+  padding: var(--space-6); /* Increased padding for more breathing room */
   text-align: center;
-  padding: var(--space-5);
-  background-color: var(--color-background);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
-  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md); /* Stronger shadow for depth */
+  border: 1px solid var(--color-border-light); /* Lighter border */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.stat:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
+.stat-item:hover {
+  transform: translateY(-5px) scale(1.02); /* Lift and slightly enlarge on hover */
+  box-shadow: var(--shadow-lg); /* More pronounced shadow on hover */
+}
+
+.stat-item.hovered {
+  background: linear-gradient(90deg, var(--color-primary), #9D7CEB);
+  background-size: 200% auto;
+  animation: hero-stats-animated-gradient 3s linear infinite;
+  color: white; /* Ensure text is readable on dark gradient */
+  box-shadow: 0 12px 25px rgba(157, 124, 235, 0.4);
+}
+
+.stat-item.hovered .stat-number {
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: textShine 3s ease infinite;
+}
+
+.stat-item.hovered .stat-label {
+  color: rgba(255, 255, 255, 0.8); /* Lighter text for contrast on gradient */
+}
+
+.stat-item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-border-light);
+  margin-left: var(--space-4);
 }
 
 .stat-number {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem; /* Larger font size for impact */
+  font-weight: 800; /* Extra bold */
   color: var(--color-primary);
   margin-bottom: var(--space-2);
+  display: block; /* Ensure it takes full width */
+  font-family: var(--font-heading);
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 1.1rem; /* Slightly larger for readability */
   color: var(--color-text-secondary);
-  font-family: var(--font-sans);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 768px) {
-  .about-card {
-    flex-direction: column;
-  }
-
   .about-stats {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 0 var(--space-2);
   }
 
-  .stat {
-    flex: 1;
-    min-width: 120px;
-    margin: var(--space-2);
+  .stat-item {
+    padding: var(--space-5);
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .stat-label {
+    font-size: 1rem;
   }
 }
 
@@ -162,6 +194,33 @@
     width: 80%; /* Adjust image width for smaller screens */
     max-width: 300px;
     margin-bottom: var(--space-5); /* Add some space below the image */
+  }
+}
+
+/* New animation for hero stats gradient */
+@keyframes hero-stats-animated-gradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
   }
 }
 

@@ -2,9 +2,16 @@ import "../styles/About.css"
 import profileImage from "../assets/gradpic.png"; // Import the profile image
 import { useEffect, useState } from "react";
 
+const statsData = [
+  { id: 1, number: "15+", label: "Client Projects" },
+  { id: 2, number: "3+", label: "Years of Experience" },
+  { id: 3, number: "7+", label: "Clients" },
+];
+
 const About = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [animateText, setAnimateText] = useState(false);
+  const [hoveredStat, setHoveredStat] = useState<number | null>(null);
 
   useEffect(() => {
     // Stagger animations for a more polished entrance
@@ -39,7 +46,7 @@ const About = () => {
           </div>
           <div className="about-section">
             <div className="about-description-header">
-              <h3>A AI/ML Engineer with a strong background in Software development </h3> 
+              <h3>An AI/ML Engineer with a strong background in Software development </h3> 
             </div>
             <div className="about-description">
               <p>I am passionate about creating impactful, data-driven solutions. My experience includes building applications, working with large datasets, and developing intelligent systems leveraging AI. Known for my problem-solving abilities, attention to detail, and ability to quickly learn new technologies, I excel in collaborative environments and have a proven track record of being a key player on projects. With strong communication and interpersonal skills, I am adept at guiding team members, fostering a positive work culture, and ensuring alignment with project goals to deliver inno vative solutions.</p>
@@ -47,18 +54,17 @@ const About = () => {
           </div>
         </div>
         <div className="hero-stats">
-          <div className="stat-item">
-            <span className="stat-number">15+</span>
-            <span className="stat-label">Client Projects</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">3+</span>
-            <span className="stat-label">Years of Experience</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">7+</span>
-            <span className="stat-label">Clients</span>
-          </div>
+          {statsData.map((stat) => (
+            <div
+              key={stat.id}
+              className={`stat-item ${hoveredStat === stat.id ? 'hovered' : ''}`}
+              onMouseEnter={() => setHoveredStat(stat.id)}
+              onMouseLeave={() => setHoveredStat(null)}
+            >
+              <span className="stat-number">{stat.number}</span>
+              <span className="stat-label">{stat.label}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>

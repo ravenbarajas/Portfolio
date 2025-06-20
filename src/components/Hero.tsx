@@ -1,5 +1,4 @@
 import { LocationPin } from "./icons/LocationPin"
-import profileImage from "../assets/gradpic.png"; // Import the profile image
 import { useEffect, useState } from "react";
 import { Email } from "./icons/Email"
 import { Linkedin } from "./icons/Linkedin"
