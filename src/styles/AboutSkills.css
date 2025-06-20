@@ -1,0 +1,109 @@
+/* src/styles/AboutSkills.css */
+
+.about-skills-section {
+  padding: var(--space-10) 0;
+  background-color: var(--color-background);
+}
+
+.skills-grid-about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.skill-category-card {
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border-accent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--skill-card-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.skill-category-card:hover::before {
+  opacity: 1;
+}
+
+.skill-category-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category-card h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-5);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.skills-list-about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+.skill-tag-about {
+  background-color: var(--color-tag-bg);
+  color: var(--color-tag-text);
+  padding: var(--space-2) var(--space-4);
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color var(--transition-medium), transform var(--transition-medium), color var(--transition-medium);
+  border: 1px solid var(--color-border-light);
+}
+
+.skill-tag-about:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-grid-about {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .skill-category-card {
+    padding: var(--space-5);
+  }
+
+  .skill-category-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .skills-list-about {
+    gap: var(--space-2);
+  }
+
+  .skill-tag-about {
+    font-size: 0.8rem;
+    padding: var(--space-1) var(--space-3);
+  }
+} 
