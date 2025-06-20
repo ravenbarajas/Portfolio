@@ -14,6 +14,7 @@ const Experience = () => {
     {
       id: 1,
       role: "AI/ML Engineer",
+      level: "Mid-Level",
       period: "2024/11 - Present",
       company: "Accenture, Inc.",
       descriptions: [
@@ -23,6 +24,7 @@ const Experience = () => {
     {
       id: 2,
       role: "Application Developer",
+      level: "Junior-Level",
       period: "2024/02 - 2024/11",
       company: "VIVA Communications, Inc.",
       descriptions: [
@@ -31,7 +33,8 @@ const Experience = () => {
     },
     {
       id: 3,
-      role: "Web Development Intern",
+      role: "Web Developer",
+      level: "Intern",
       period: "2023/03 - 2023/07",
       company: "LexMeet",
       descriptions: [
@@ -55,7 +58,7 @@ const Experience = () => {
               <div className="timeline-marker"></div>
               <div className="timeline-content">
                 <div className="role-header">
-                  <h3>{exp.role}</h3>
+                  <h3>{exp.role} <span className="role-level">({exp.level})</span></h3>
                   {index === 0 ? (
                     <span className="period-badge">2024/11 - Present</span>
                   ) : (

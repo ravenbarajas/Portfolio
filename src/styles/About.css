@@ -126,3 +126,42 @@
   }
 }
 
+.about-section {
+  /* Existing styles */
+}
+
+.hero-image {
+  /* Existing styles */
+}
+
+.about-content-layout {
+  display: flex;
+  gap: var(--space-8); /* Adjust gap as needed */
+  align-items: flex-start; /* Align items to the top */
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.about-content-layout > .about-section {
+  flex: 1; /* Allows about section to take available space */
+}
+
+.about-content-layout > .hero-image {
+  flex-shrink: 0; /* Prevents image from shrinking */
+  width: 50%; /* Adjust as needed, e.g., 40% for image, 60% for text */
+  max-width: 400px; /* Max width for the image container */
+}
+
+@media (max-width: 768px) {
+  .about-content-layout {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center; /* Center items when stacked */
+  }
+
+  .about-content-layout > .hero-image {
+    width: 80%; /* Adjust image width for smaller screens */
+    max-width: 300px;
+    margin-bottom: var(--space-5); /* Add some space below the image */
+  }
+}
+
