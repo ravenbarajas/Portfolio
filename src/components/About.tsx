@@ -53,6 +53,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         <div className="hero-stats">
           {statsData.map((stat) => (
             <div

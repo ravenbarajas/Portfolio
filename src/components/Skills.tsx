@@ -123,12 +123,14 @@ import lightnetlifyLogo from "../assets/skill-light-logo/netlify-logo.png";
 
 interface SkillCategory {
   title: string;
+  description: string;
   skills: string[];
 }
 
 const skillData: SkillCategory[] = [
   {
     title: "AI & Machine Learning",
+    description: "Experienced with developing and deploying intelligent systems, leveraging various machine learning algorithms and AI platforms.",
     skills: [
       "Chroma", "Databricks", "Haystack", "Keras", "Langchain",
       "Hugging Face", "MLflow", "OpenAI", "OpenCV", "PyTorch",
@@ -137,6 +139,7 @@ const skillData: SkillCategory[] = [
   },
   {
     title: "Data Analytics & Visualization",
+    description: "Proficient in extracting insights from data, performing statistical analysis, and creating compelling visualizations.",
     skills: [
       "Matplotlib", "NumPy", "Pandas", "Plotly", "Python",
       "SciPy", "Seaborn", "SQL"
@@ -144,6 +147,7 @@ const skillData: SkillCategory[] = [
   },
   {
     title: "Frontend",
+    description: "Skilled in building responsive and user-friendly web interfaces using modern frontend technologies and frameworks.",
     skills: [
       "HTML", "CSS", "JavaScript", "TypeScript", "ReactJS",
       "Tailwind CSS", "Vite"
@@ -151,6 +155,7 @@ const skillData: SkillCategory[] = [
   },
   {
     title: "Backend, API & Databases",
+    description: "Adept at developing robust server-side applications, designing scalable APIs, and managing various database systems.",
     skills: [
       "Flask", "FastAPI", "Laravel", "PHP", "Node.js",
       "Express.js", "RESTful API", "MySQL", "PostgreSQL", "MongoDB",
@@ -159,6 +164,7 @@ const skillData: SkillCategory[] = [
   },
   {
     title: "DevOps, Cloud, Testing & Integrations",
+    description: "Capable in implementing continuous integration/delivery pipelines, managing cloud infrastructure, and ensuring software quality through comprehensive testing.",
     skills: [
       "Git", "Docker", "Kubernetes", "Stripe", "PayPal",
       "Firebase", "AWS", "Postman", "Pytest", "Vercel",
@@ -198,8 +204,10 @@ const Skills = () => {
         <div className="skills-section">
           {/* AI/ML Section */}
           <div className="skills-description-header">
-            <h3>AI & Machine Learning</h3>
+            <h3>{skillData[0].title}</h3>
           </div>
+          <p className="skills-description">{skillData[0].description}</p>
+
           <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? chromaLogo : lightchromaLogo} alt="Chroma Logo" />
             <img src={isDarkMode ? databricksLogo : lightdatabricksLogo} alt="Databricks Logo" />
@@ -216,20 +224,15 @@ const Skills = () => {
             <img src={isDarkMode ? scikitlearnLogo : lightscikitlearnLogo} alt="Scikit-learn Logo" />
             <img src={isDarkMode ? spacyLogo : lightspacyLogo} alt="spaCy Logo" />
           </Marquee>
-          <div className="skills-list-about">
-            {skillData[0].skills.map((skill, skillIndex) => (
-              <span key={skillIndex} className="skill-tag-about">
-                {skill}
-              </span>
-            ))}
-          </div>
         </div>
 
         <div className="skills-section">
           {/* Data Analytics & Visualization Section */}
           <div className="skills-description-header">
-            <h3>Data Analytics & Visualization</h3>
+            <h3>{skillData[1].title}</h3>
           </div>
+          <p className="skills-description">{skillData[1].description}</p>
+
           <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? matplotlibLogo : lightmatplotlibLogo} alt="Matplotlib Logo" />
             <img src={isDarkMode ? numpyLogo : lightnumpyLogo} alt="NumPy Logo" />
@@ -240,23 +243,16 @@ const Skills = () => {
             <img src={isDarkMode ? seabornLogo : lightseabornLogo} alt="Seaborn Logo" />
             <img src={isDarkMode ? sqlLogo : lightsqlLogo} alt="SQL Logo" />
           </Marquee>
-          <div className="skills-list-about">
-            {skillData[1].skills.map((skill, skillIndex) => (
-              <span key={skillIndex} className="skill-tag-about">
-                {skill}
-              </span>
-            ))}
-          </div>
         </div>
 
-        {/* Software Development Section */}
+        {/* Frontend Development Section */}
         <div className="skills-section">
           <div className="skills-description-header">
-            <h3>Software Development</h3>
+            <h3>{skillData[2].title}</h3>
           </div>
+          <p className="skills-description">{skillData[2].description}</p>
 
-          {/* Frontend Marquee */}
-          <Marquee className="skills-marquee" speed={25} direction="right" gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
+           <Marquee className="skills-marquee" speed={25} direction="right" gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? htmlLogo : lighthtmlLogo} alt="HTML Logo" />
             <img src={isDarkMode ? cssLogo : lightcssLogo} alt="CSS Logo" />
             <img src={isDarkMode ? javascriptLogo : lightjavascriptLogo} alt="JavaScript Logo" />
@@ -265,16 +261,16 @@ const Skills = () => {
             <img src={isDarkMode ? tailwindLogo : lighttailwindLogo} alt="Tailwind CSS Logo" />
             <img src={isDarkMode ? viteLogo : lightviteLogo} alt="Vite Logo" />
           </Marquee>
-          <div className="skills-list-about">
-            {skillData[2].skills.map((skill, skillIndex) => (
-              <span key={skillIndex} className="skill-tag-about">
-                {skill}
-              </span>
-            ))}
-          </div>
+        </div>
 
-          {/* Backend, API & Databases Marquee */}
-          <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
+        {/* Backend, API & Databases Section */}
+        <div className="skills-section">
+          <div className="skills-description-header">
+            <h3>{skillData[3].title}</h3>
+          </div>
+          <p className="skills-description">{skillData[3].description}</p>
+
+           <Marquee className="skills-marquee" speed={25} gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? flaskLogo : lightflaskLogo} alt="Flask Logo" />
             <img src={isDarkMode ? fastapiLogo : lightfastapiLogo} alt="FastAPI Logo" />
             <img src={isDarkMode ? laravelLogo : lightlaravelLogo} alt="Laravel Logo" />
@@ -287,16 +283,16 @@ const Skills = () => {
             <img src={isDarkMode ? mongodbLogo : lightmongodbLogo} alt="MongoDB Logo" />
             <img src={isDarkMode ? sqliteLogo : lightsqliteLogo} alt="SQLite Logo" />
           </Marquee>
-          <div className="skills-list-about">
-            {skillData[3].skills.map((skill, skillIndex) => (
-              <span key={skillIndex} className="skill-tag-about">
-                {skill}
-              </span>
-            ))}
-          </div>
+        </div>
 
-          {/* DevOps, Cloud, Testing & Integrations Marquee */}
-          <Marquee className="skills-marquee" speed={25} direction="right" gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
+        {/* DevOps, Cloud, Testing & Integrations Section */}
+        <div className="skills-section">
+          <div className="skills-description-header">
+            <h3>{skillData[4].title}</h3>
+          </div>
+          <p className="skills-description">{skillData[4].description}</p>
+
+           <Marquee className="skills-marquee" speed={25} direction="right" gradient={true} gradientColor={`rgb(${isDarkMode ? '18, 18, 18' : '245, 245, 245'})`} autoFill={true}>
             <img src={isDarkMode ? gitLogo : lightgitLogo} alt="Git Logo" />
             <img src={isDarkMode ? dockerLogo : lightdockerLogo} alt="Docker Logo" />
             <img src={isDarkMode ? kubernetesLogo : lightkubernetesLogo} alt="Kubernetes Logo" />
@@ -310,13 +306,6 @@ const Skills = () => {
             <img src={isDarkMode ? railwayLogo : lightrailwayLogo} alt="Railway Logo" />
             <img src={isDarkMode ? netlifyLogo : lightnetlifyLogo} alt="Netlify Logo" />
           </Marquee>
-          <div className="skills-list-about">
-            {skillData[4].skills.map((skill, skillIndex) => (
-              <span key={skillIndex} className="skill-tag-about">
-                {skill}
-              </span>
-            ))}
-          </div>
         </div>
 
       </div>

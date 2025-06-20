@@ -40,7 +40,8 @@
 .stat-item {
   background-color: var(--color-card-background);
   border-radius: var(--radius-lg); /* Slightly larger radius for a softer look */
-  padding: var(--space-6); /* Increased padding for more breathing room */
+  padding: var(--space-4); /* Increased padding for more breathing room */
+  margin-top: var(--space-6); /* Increased padding for more breathing room */
   text-align: center;
   box-shadow: var(--shadow-md); /* Stronger shadow for depth */
   border: 1px solid var(--color-border-light); /* Lighter border */
@@ -85,13 +86,12 @@
   font-size: 3rem; /* Larger font size for impact */
   font-weight: 800; /* Extra bold */
   color: var(--color-primary);
-  margin-bottom: var(--space-2);
   display: block; /* Ensure it takes full width */
   font-family: var(--font-heading);
 }
 
 .stat-label {
-  font-size: 1.1rem; /* Slightly larger for readability */
+  font-size: 1rem; /* Slightly larger for readability */
   color: var(--color-text-secondary);
   font-family: var(--font-heading);
   text-transform: uppercase;
@@ -193,7 +193,7 @@
   .about-content-layout > .hero-image {
     width: 80%; /* Adjust image width for smaller screens */
     max-width: 300px;
-    margin-bottom: var(--space-5); /* Add some space below the image */
+    margin-bottom: var(--space-4); /* Add some space below the image */
   }
 }
 
