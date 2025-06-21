@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 import { ExternalLink } from "./icons/ExternalLink";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+import orderManagementThumbnail from "../assets/project-thumbnail/order-management.png";
+import roofingWebsiteThumbnail from "../assets/project-thumbnail/roofing-website.png";
+import bayfitNetworkThumbnail from "../assets/project-thumbnail/bayfit-network.png";
+import routeOptimizationThumbnail from "../assets/project-thumbnail/route-optimization.png";
+
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
@@ -18,6 +23,7 @@ const Projects = () => {
       link: "http://purchaseflow.free.nf/orders",
       category: "AI/ML",
       type: "Client",
+      thumbnail: orderManagementThumbnail,
     },
     {
       id: 2,
@@ -28,6 +34,7 @@ const Projects = () => {
       link: "http://heartland-roofing.free.nf/",
       category: "AI/ML",
       type: "Client",
+      thumbnail: roofingWebsiteThumbnail,
     },
     {
       id: 3,
@@ -38,6 +45,7 @@ const Projects = () => {
       link: "http://bayfit-network.free.nf/",
       category: "AI/ML",
       type: "Client",
+      thumbnail: bayfitNetworkThumbnail,
     },
     {
       id: 4,
@@ -48,6 +56,7 @@ const Projects = () => {
       link: "http://routelogic.free.nf/",
       category: "AI/ML",
       type: "Client",
+      thumbnail: routeOptimizationThumbnail,
     },
     {
       id: 5,
@@ -699,28 +708,40 @@ const Projects = () => {
               target={project.link ? "_blank" : "_self"}
               rel={project.link ? "noopener noreferrer" : ""}
               className="project-card"
-              style={{ textDecoration: "none", color: "inherit", marginBottom: '20px' }}
+              style={{ textDecoration: "none", color: "inherit" }}
             >
-              <h3>{project.title}</h3>
-              {project.type && 
-                <span className="project-type-tag" style={{ 
-                display: 'inline-block', verticalAlign: 'top', fontSize: '0.8em', padding: '2px 6px', borderRadius: '4px', backgroundColor: '#e0e0e0', color: '#333', marginRight: '10px' }}>
-                {project.type}
-                </span>}
-              <p className="project-description" style={{ display: 'inline-block', marginRight: '10px' }}>{project.description}</p>
-              <p className="project-details">{project.details}</p>
-              <div className="project-footer">
-                <div className="project-technologies">
-                  {project.technologies.map((tech, index) => (
-                    <span key={index} className="tag">
-                      {tech}
-                    </span>
-                  ))}
+              {project.thumbnail && (
+                <div className="project-thumbnail-container">
+                  <img
+                    src={project.thumbnail}
+                    alt={`${project.title} thumbnail`}
+                    className="project-thumbnail"
+                  />
+                  <div className="project-thumbnail-fade"></div>
                 </div>
-                <span className="view-link">
-                  <span>View</span>
-                  <ExternalLink />
-                </span>
+              )}
+              <div className="project-content">
+                <h3>{project.title}</h3>
+                {project.type && 
+                  <span className="project-type-tag" style={{ 
+                  display: 'inline-block', verticalAlign: 'top', fontSize: '0.8em', padding: '2px 6px', borderRadius: '4px', backgroundColor: '#e0e0e0', color: '#333', marginRight: '10px' }}>
+                  {project.type}
+                  </span>}
+                <p className="project-description" style={{ display: 'inline-block', marginRight: '10px' }}>{project.description}</p>
+                <p className="project-details">{project.details}</p>
+                <div className="project-footer">
+                  <div className="project-technologies">
+                    {project.technologies.map((tech, index) => (
+                      <span key={index} className="tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="view-link">
+                    <span>View</span>
+                    <ExternalLink />
+                  </span>
+                </div>
               </div>
             </a>
           ))}
