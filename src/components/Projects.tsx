@@ -10,6 +10,10 @@ import logisticsDashboardThumbnail from "../assets/project-thumbnail/logistics-d
 import travelWebsiteThumbnail from "../assets/project-thumbnail/travel-website.png";
 import ecommerceWebsiteThumbnail from "../assets/project-thumbnail/ecommerce-website.png";
 import budgetTrackerThumbnail from "../assets/project-thumbnail/budget-tracker.png";
+import insightsDashboardThumbnail from "../assets/project-thumbnail/insights-dashboard.png";
+import procurementManagementThumbnail from "../assets/project-thumbnail/procurement-management.png";
+import enterpriseHrisThumbnail from "../assets/project-thumbnail/enterprise-hris.png";
+import shipmentDashboardThumbnail from "../assets/project-thumbnail/shipment-dashboard.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -75,7 +79,7 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "TravelEase",
+      title: "Travel Booking Website",
       description: "A travel planning app that helps users find and book trips.",
       details: "Offers personalized travel recommendations and booking options based on user preferences.",
       technologies: ["React.js", "Node.js", "MongoDB"],
@@ -86,7 +90,7 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "SnapMart",
+      title: "E-commerce Marketplace",
       description: "An e-commerce platform for buying and selling products.",
       details: "Features a user-friendly interface for browsing products, managing orders, and processing payments.",
       technologies: ["React.js", "Express.js", "MySQL"],
@@ -115,6 +119,7 @@ const Projects = () => {
       link: "http://analytiqx.free.nf/",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: insightsDashboardThumbnail,
     },
     {
       id: 10,
@@ -125,6 +130,7 @@ const Projects = () => {
       link: "http://procuremate.free.nf/",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: procurementManagementThumbnail,
     },
     {
       id: 11,
@@ -135,6 +141,7 @@ const Projects = () => {
       link: "http://corehrx.free.nf/",
       category: "Web Apps",
       type: "Personal",
+      thumbnail: enterpriseHrisThumbnail,
     },
     {
       id: 12,
@@ -145,6 +152,7 @@ const Projects = () => {
       link: "http://shipdirect.free.nf/shipments",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: shipmentDashboardThumbnail,
     },
     {
       id: 13,
