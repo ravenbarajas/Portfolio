@@ -718,16 +718,15 @@ const Projects = () => {
                     className="project-thumbnail"
                   />
                   <div className="project-thumbnail-fade"></div>
+                  {project.type && 
+                    <span className="project-type-tag">
+                      {project.type}
+                    </span>
+                  }
                 </div>
               )}
               <div className="project-content">
                 <h3>{project.title}</h3>
-                {project.type && 
-                  <span className="project-type-tag" style={{ 
-                  display: 'inline-block', verticalAlign: 'top', fontSize: '0.8em', padding: '2px 6px', borderRadius: '4px', backgroundColor: '#e0e0e0', color: '#333', marginRight: '10px' }}>
-                  {project.type}
-                  </span>}
-                <p className="project-description" style={{ display: 'inline-block', marginRight: '10px' }}>{project.description}</p>
                 <p className="project-details">{project.details}</p>
                 <div className="project-footer">
                   <div className="project-technologies">

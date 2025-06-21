@@ -966,6 +966,24 @@ body.dark-mode .skill-category {
   object-position: top;
 }
 
+.project-type-tag {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  z-index: 10;
+  transition: background-color var(--transition-medium);
+}
+
+body.dark-mode .project-type-tag {
+  background-color: rgba(157, 124, 235, 0.8);
+}
+
 .project-thumbnail-fade {
   position: absolute;
   bottom: 0;
@@ -981,8 +999,12 @@ body.dark-mode .skill-category {
 }
 
 .project-content h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: var(--color-text-primary);
+  transition: color var(--transition-medium);
+  position: relative;
+  text-align: justify;
+  margin-bottom: var(--space-2);
 }
 
 .project-content p {
@@ -1009,12 +1031,8 @@ body.dark-mode .project-card {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.project-description {
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-3);
-}
-
 .project-details {
+  color: var(--color-text-secondary);
   margin-bottom: var(--space-4);
 }
 
