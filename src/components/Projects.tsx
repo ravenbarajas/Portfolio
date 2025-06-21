@@ -6,6 +6,10 @@ import orderManagementThumbnail from "../assets/project-thumbnail/order-manageme
 import roofingWebsiteThumbnail from "../assets/project-thumbnail/roofing-website.png";
 import bayfitNetworkThumbnail from "../assets/project-thumbnail/bayfit-network.png";
 import routeOptimizationThumbnail from "../assets/project-thumbnail/route-optimization.png";
+import logisticsDashboardThumbnail from "../assets/project-thumbnail/logistics-dashboard.png";
+import travelWebsiteThumbnail from "../assets/project-thumbnail/travel-website.png";
+import ecommerceWebsiteThumbnail from "../assets/project-thumbnail/ecommerce-website.png";
+import budgetTrackerThumbnail from "../assets/project-thumbnail/budget-tracker.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -67,6 +71,7 @@ const Projects = () => {
       link: "http://logidash.free.nf/",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: logisticsDashboardThumbnail,
     },
     {
       id: 6,
@@ -77,6 +82,7 @@ const Projects = () => {
       link: "http://travelease.free.nf/",
       category: "Web Apps",
       type: "Client",
+      thumbnail: travelWebsiteThumbnail,
     },
     {
       id: 7,
@@ -87,6 +93,7 @@ const Projects = () => {
       link: "http://snapmart.free.nf/",
       category: "Web Apps",
       type: "Client",
+      thumbnail: ecommerceWebsiteThumbnail,
     },
     {
       id: 8,
@@ -97,6 +104,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://budgetbuddy.free.nf/",
       type: "Personal",
+      thumbnail: budgetTrackerThumbnail,
     },
     {
       id: 9,

@@ -1,4 +1,3 @@
-
 import { Github } from '../../src/components/icons/Github';
 import { Linkedin } from '../../src/components/icons/Linkedin';
 
