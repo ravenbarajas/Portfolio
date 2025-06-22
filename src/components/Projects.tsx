@@ -14,6 +14,10 @@ import insightsDashboardThumbnail from "../assets/project-thumbnail/insights-das
 import procurementManagementThumbnail from "../assets/project-thumbnail/procurement-management.png";
 import enterpriseHrisThumbnail from "../assets/project-thumbnail/enterprise-hris.png";
 import shipmentDashboardThumbnail from "../assets/project-thumbnail/shipment-dashboard.png";
+import fleetManagementThumbnail from "../assets/project-thumbnail/fleet-management.png";
+import warehouseInventoryThumbnail from "../assets/project-thumbnail/warehouse-inventory.png";
+import recipeRecommenderThumbnail from "../assets/project-thumbnail/recipe-recommender.png";
+import supplierManagementThumbnail from "../assets/project-thumbnail/supplier-management.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -163,6 +167,7 @@ const Projects = () => {
       link: "http://fleetly.free.nf/vehicles",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: fleetManagementThumbnail,
     },
     {
       id: 14,
@@ -173,6 +178,7 @@ const Projects = () => {
       link: "http://warehouseiq.free.nf/warehouse",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: warehouseInventoryThumbnail,
     },
     {
       id: 15,
@@ -184,6 +190,7 @@ const Projects = () => {
       category: "AI/ML",
       link: "http://recipegram.free.nf/",
       type: "Personal",
+      thumbnail: recipeRecommenderThumbnail,
     },
     {
       id: 16,
@@ -194,6 +201,7 @@ const Projects = () => {
       link: "http://supplierbase.free.nf/suppliers",
       category: "Dashboards",
       type: "Personal",
+      thumbnail: supplierManagementThumbnail,
     },
     {
       id: 17,
