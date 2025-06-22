@@ -18,6 +18,10 @@ import fleetManagementThumbnail from "../assets/project-thumbnail/fleet-manageme
 import warehouseInventoryThumbnail from "../assets/project-thumbnail/warehouse-inventory.png";
 import recipeRecommenderThumbnail from "../assets/project-thumbnail/recipe-recommender.png";
 import supplierManagementThumbnail from "../assets/project-thumbnail/supplier-management.png";
+import clientManagementThumbnail from "../assets/project-thumbnail/client-management.png";
+import dataReportingThumbnail from "../assets/project-thumbnail/data-reporting.png";
+import customerRelationshipThumbnail from "../assets/project-thumbnail/customer-relationship.png";
+import stockSentimentThumbnail from "../assets/project-thumbnail/stock-sentiment.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -212,6 +216,7 @@ const Projects = () => {
       link: "http://clientsync.free.nf/",
       category: "Dashboards",
       type: "Client",
+      thumbnail: clientManagementThumbnail,
     },
     {
       id: 18,
@@ -222,6 +227,7 @@ const Projects = () => {
       link: "http://reportgenius.free.nf/",
       category: "Dashboards",
       type: "Client",
+      thumbnail: dataReportingThumbnail,
     },
     {
       id: 19,
@@ -232,6 +238,7 @@ const Projects = () => {
       link: "http://connectsphere.free.nf/",
       category: "Web Apps",
       type: "Client",
+      thumbnail: customerRelationshipThumbnail,
     },
     {
       id: 20,
@@ -243,6 +250,7 @@ const Projects = () => {
       category: "AI/ML",
       link: "http://stocksentio.free.nf/",
       type: "Personal",
+      thumbnail: stockSentimentThumbnail,
     },
     {
       id: 21,
