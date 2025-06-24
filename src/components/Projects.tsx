@@ -26,6 +26,10 @@ import legalSimilarityThumbnail from "../assets/project-thumbnail/legal-similari
 import aiCommuteThumbnail from "../assets/project-thumbnail/ai-commute.png";
 import taskOrganizerThumbnail from "../assets/project-thumbnail/task-organizer.png";
 import ecommerceMarketplaceThumbnail from "../assets/project-thumbnail/ecommerce-marketplace.png";
+import learnerManagementThumbnail from "../assets/project-thumbnail/learner-management.png";
+import commuteAssistantThumbnail from "../assets/project-thumbnail/commute-assistant.png";
+import habitTrackerThumbnail from "../assets/project-thumbnail/habit-tracker.png";
+import dentalSchedulerThumbnail from "../assets/project-thumbnail/dental-scheduler.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -310,6 +314,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://edutracklms.free.nf/",
       type: "Personal",
+      thumbnail: learnerManagementThumbnail,
     },
     {
       id: 26,
@@ -320,6 +325,7 @@ const Projects = () => {
       category: "AI/ML",
       link: "http://commutegpt.free.nf/",
       type: "Personal",
+      thumbnail: commuteAssistantThumbnail,
     },
     {
       id: 27,
@@ -330,6 +336,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://habitquest.free.nf/",
       type: "Personal",
+      thumbnail: habitTrackerThumbnail,
     },
     {
       id: 28,
@@ -340,6 +347,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://oralease.free.nf/",
       type: "Client",
+      thumbnail: dentalSchedulerThumbnail,
     },
     {
       id: 29,
