@@ -34,6 +34,10 @@ import libraryManagementThumbnail from "../assets/project-thumbnail/library-mana
 import petManagementThumbnail from "../assets/project-thumbnail/pet-management.png";
 import chineseRestaurantThumbnail from "../assets/project-thumbnail/chinese-restaurant.png";
 import environmentalMonitorThumbnail from "../assets/project-thumbnail/environmental-monitor.png";
+import automatedGuestServicesThumbnail from "../assets/project-thumbnail/guest-services.png";
+import multiPropertyAdminSuiteThumbnail from "../assets/project-thumbnail/admin-suite.png";
+import serviceRequestPlatformThumbnail from "../assets/project-thumbnail/service-request.png";
+import walkinQueueTicketSystemThumbnail from "../assets/project-thumbnail/ticket-system.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -405,6 +409,7 @@ const Projects = () => {
       category: "AI/ML",
       link: "http://guestpal.free.nf/",
       type: "Client",
+      thumbnail: automatedGuestServicesThumbnail,
     },
     {
       id: 34,
@@ -415,6 +420,7 @@ const Projects = () => {
       category: "Dashboards",
       link: "http://propertypilot.free.nf/",
       type: "Client",
+      thumbnail: multiPropertyAdminSuiteThumbnail,
     },
     {
       id: 35,
@@ -425,6 +431,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://fixmate.free.nf/",
       type: "Client",
+      thumbnail: serviceRequestPlatformThumbnail,
     },
     {
       id: 36,
@@ -435,6 +442,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://queuetrackr.free.nf/",
       type: "Client",
+      thumbnail: walkinQueueTicketSystemThumbnail,
     },
     {
       id: 37,
