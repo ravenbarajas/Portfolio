@@ -30,6 +30,10 @@ import learnerManagementThumbnail from "../assets/project-thumbnail/learner-mana
 import commuteAssistantThumbnail from "../assets/project-thumbnail/commute-assistant.png";
 import habitTrackerThumbnail from "../assets/project-thumbnail/habit-tracker.png";
 import dentalSchedulerThumbnail from "../assets/project-thumbnail/dental-scheduler.png";
+import libraryManagementThumbnail from "../assets/project-thumbnail/library-management.png";
+import petManagementThumbnail from "../assets/project-thumbnail/pet-management.png";
+import chineseRestaurantThumbnail from "../assets/project-thumbnail/chinese-restaurant.png";
+import environmentalMonitorThumbnail from "../assets/project-thumbnail/environmental-monitor.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -357,6 +361,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://shelfsmart.free.nf/",
       type: "Client",
+      thumbnail: libraryManagementThumbnail,
     },
     {
       id: 30,
@@ -367,6 +372,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://furfriend.free.nf/",
       type: "Client",
+      thumbnail: petManagementThumbnail,
     },
     {
       id: 31,
@@ -377,6 +383,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://goldenwok.free.nf/",
       type: "Client",
+      thumbnail: chineseRestaurantThumbnail,
     },
     {
       id: 32,
@@ -387,6 +394,7 @@ const Projects = () => {
       category: "Dashboards",
       link: "http://carbonvision.free.nf/",
       type: "Client",
+      thumbnail: environmentalMonitorThumbnail,
     },
     {
       id: 33,
