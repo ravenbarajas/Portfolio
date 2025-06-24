@@ -22,6 +22,10 @@ import clientManagementThumbnail from "../assets/project-thumbnail/client-manage
 import dataReportingThumbnail from "../assets/project-thumbnail/data-reporting.png";
 import customerRelationshipThumbnail from "../assets/project-thumbnail/customer-relationship.png";
 import stockSentimentThumbnail from "../assets/project-thumbnail/stock-sentiment.png";
+import legalSimilarityThumbnail from "../assets/project-thumbnail/legal-similarity.png";
+import aiCommuteThumbnail from "../assets/project-thumbnail/ai-commute.png";
+import taskOrganizerThumbnail from "../assets/project-thumbnail/task-organizer.png";
+import ecommerceMarketplaceThumbnail from "../assets/project-thumbnail/ecommerce-marketplace.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -162,6 +166,7 @@ const Projects = () => {
       type: "Personal",
       thumbnail: shipmentDashboardThumbnail,
     },
+    // Technology tags to be updated //
     {
       id: 13,
       title: "Vehicle Fleet Management Dashboard",
@@ -261,6 +266,7 @@ const Projects = () => {
       category: "AI/ML",
       link: "http://casematchai.free.nf/",
       type: "Personal",
+      thumbnail: legalSimilarityThumbnail,
     },
     {
       id: 22,
@@ -271,6 +277,7 @@ const Projects = () => {
       category: "AI/ML",
       link: "http://waylo.free.nf/",
       type: "Personal",
+      thumbnail: aiCommuteThumbnail,
     },
     {
       id: 23,
@@ -281,6 +288,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://stickyboard.free.nf/",
       type: "Personal",
+      thumbnail: taskOrganizerThumbnail,
     },
     {
       id: 24,
@@ -291,6 +299,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://cartella.free.nf/",
       type: "Personal",
+      thumbnail: ecommerceMarketplaceThumbnail,
     },
     {
       id: 25,
