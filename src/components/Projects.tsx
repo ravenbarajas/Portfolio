@@ -38,6 +38,10 @@ import automatedGuestServicesThumbnail from "../assets/project-thumbnail/guest-s
 import multiPropertyAdminSuiteThumbnail from "../assets/project-thumbnail/admin-suite.png";
 import serviceRequestPlatformThumbnail from "../assets/project-thumbnail/service-request.png";
 import walkinQueueTicketSystemThumbnail from "../assets/project-thumbnail/ticket-system.png";
+import sparePartsManagementThumbnail from "../assets/project-thumbnail/spare-management.png";
+import equipmentToolManagementThumbnail from "../assets/project-thumbnail/tool-management.png";
+import storeInventoryManagerThumbnail from "../assets/project-thumbnail/store-inventory.png";
+import supplyRestockingNotificationThumbnail from "../assets/project-thumbnail/restocking-system.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -453,6 +457,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://sparestack.free.nf/",
       type: "Client",
+      thumbnail: sparePartsManagementThumbnail,
     },
     {
       id: 38,
@@ -463,6 +468,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://assetkit.free.nf/",
       type: "Client",
+      thumbnail: equipmentToolManagementThumbnail,
     },
     {
       id: 39,
@@ -473,6 +479,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://stocklite.free.nf/",
       type: "Client",
+      thumbnail: storeInventoryManagerThumbnail,
     },
     {
       id: 40,
@@ -483,6 +490,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://restockly.free.nf/",
       type: "Client",
+      thumbnail: supplyRestockingNotificationThumbnail,
     },
     {
       id: 41,
