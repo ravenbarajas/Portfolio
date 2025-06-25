@@ -42,6 +42,14 @@ import sparePartsManagementThumbnail from "../assets/project-thumbnail/spare-man
 import equipmentToolManagementThumbnail from "../assets/project-thumbnail/tool-management.png";
 import storeInventoryManagerThumbnail from "../assets/project-thumbnail/store-inventory.png";
 import supplyRestockingNotificationThumbnail from "../assets/project-thumbnail/restocking-system.png";
+import employeeShiftAttendanceSchedulerThumbnail from "../assets/project-thumbnail/attendance-scheduler.png";
+import digitalMenuQrCodeGeneratorThumbnail from "../assets/project-thumbnail/digital-menu.png";
+import feedbackRatingManagerThumbnail from "../assets/project-thumbnail/rating-manager.png";
+import digitalGiftCardSystemThumbnail from "../assets/project-thumbnail/digital-giftcard.png";
+import skillTutoringPlatformThumbnail from "../assets/project-thumbnail/skill-tutoring.png";
+import handmadeGoodsEcommerceThumbnail from "../assets/project-thumbnail/handmade-goods.png";
+import pickupDeliveryLaundryServiceThumbnail from "../assets/project-thumbnail/laundry-service.png";
+import preOrderSystemTakeoutMealPrepThumbnail from "../assets/project-thumbnail/meal-prep.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -501,6 +509,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://shiftwise.free.nf/",
       type: "Client",
+      thumbnail: employeeShiftAttendanceSchedulerThumbnail,
     },
     {
       id: 42,
@@ -511,6 +520,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://menusnap.free.nf/",
       type: "Client",
+      thumbnail: digitalMenuQrCodeGeneratorThumbnail,
     },
     {
       id: 43,
@@ -521,6 +531,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://reviewradar.free.nf/",
       type: "Client",
+      thumbnail: feedbackRatingManagerThumbnail,
     },
     {
       id: 44,
@@ -531,6 +542,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://simplygifted.free.nf/",
       type: "Personal",
+      thumbnail: digitalGiftCardSystemThumbnail,
     },
     {
       id: 45,
