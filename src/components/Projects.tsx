@@ -46,7 +46,7 @@ import employeeShiftAttendanceSchedulerThumbnail from "../assets/project-thumbna
 import digitalMenuQrCodeGeneratorThumbnail from "../assets/project-thumbnail/digital-menu.png";
 import feedbackRatingManagerThumbnail from "../assets/project-thumbnail/rating-manager.png";
 import digitalGiftCardSystemThumbnail from "../assets/project-thumbnail/digital-giftcard.png";
-import skillTutoringPlatformThumbnail from "../assets/project-thumbnail/skill-tutoring.png";
+import skillTutoringPlatformThumbnail from "../assets/project-thumbnail/tutoring-platform.png";
 import handmadeGoodsEcommerceThumbnail from "../assets/project-thumbnail/handmade-goods.png";
 import pickupDeliveryLaundryServiceThumbnail from "../assets/project-thumbnail/laundry-service.png";
 import preOrderSystemTakeoutMealPrepThumbnail from "../assets/project-thumbnail/meal-prep.png";
@@ -553,6 +553,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://tutorlink.free.nf/",
       type: "Personal",
+      thumbnail: skillTutoringPlatformThumbnail,
     },
     {
       id: 46,
@@ -563,6 +564,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://craftmarket.free.nf/",
       type: "Personal",
+      thumbnail: handmadeGoodsEcommerceThumbnail,
     },
     {
       id: 47,
@@ -573,6 +575,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://laundrymate.free.nf/",
       type: "Personal",
+      thumbnail: pickupDeliveryLaundryServiceThumbnail,
     },
     {
       id: 48,
@@ -583,6 +586,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://mealmatch.free.nf/",
       type: "Personal",
+      thumbnail: preOrderSystemTakeoutMealPrepThumbnail,
     },
     {
       id: 49,
