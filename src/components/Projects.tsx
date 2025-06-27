@@ -50,6 +50,14 @@ import skillTutoringPlatformThumbnail from "../assets/project-thumbnail/tutoring
 import handmadeGoodsEcommerceThumbnail from "../assets/project-thumbnail/handmade-goods.png";
 import pickupDeliveryLaundryServiceThumbnail from "../assets/project-thumbnail/laundry-service.png";
 import preOrderSystemTakeoutMealPrepThumbnail from "../assets/project-thumbnail/meal-prep.png";
+import directProduceOrderingThumbnail from "../assets/project-thumbnail/produce-ordering.png";
+import clothingAlterationStatusAppThumbnail from "../assets/project-thumbnail/alteration-status.png";
+import communityCoffeeShopLoyaltyPortalThumbnail from "../assets/project-thumbnail/coffee-portal.png";
+import homeRenovationMaterialEstimatorThumbnail from "../assets/project-thumbnail/material-estimator.png";
+import gadgetRepairTrackerThumbnail from "../assets/project-thumbnail/gadget-repair.png";
+import equipmentBookingPlatformThumbnail from "../assets/project-thumbnail/equipment-booking.png";
+import bookingCleaningServicesThumbnail from "../assets/project-thumbnail/cleaning-services.png";
+import localSnackSubscriptionDeliveryThumbnail from "../assets/project-thumbnail/snack-subscription.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -597,6 +605,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://purelypicked.free.nf/",
       type: "Client",
+      thumbnail: directProduceOrderingThumbnail,
     },
     {
       id: 50,
@@ -607,6 +616,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://tailormade.free.nf/",
       type: "Client",
+      thumbnail: clothingAlterationStatusAppThumbnail,
     },
     {
       id: 51,
@@ -617,6 +627,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://brewlocal.free.nf/",
       type: "Client",
+      thumbnail: communityCoffeeShopLoyaltyPortalThumbnail,
     },
     {
       id: 52,
@@ -627,6 +638,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://buildquote.free.nf/",
       type: "Client",
+      thumbnail: homeRenovationMaterialEstimatorThumbnail,
     },
     {
       id: 53,
