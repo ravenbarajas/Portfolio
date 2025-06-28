@@ -54,7 +54,7 @@ import directProduceOrderingThumbnail from "../assets/project-thumbnail/produce-
 import clothingAlterationStatusAppThumbnail from "../assets/project-thumbnail/alteration-status.png";
 import communityCoffeeShopLoyaltyPortalThumbnail from "../assets/project-thumbnail/coffee-portal.png";
 import homeRenovationMaterialEstimatorThumbnail from "../assets/project-thumbnail/material-estimator.png";
-import gadgetRepairTrackerThumbnail from "../assets/project-thumbnail/gadget-repair.png";
+import gadgetRepairTrackerThumbnail from "../assets/project-thumbnail/repair-tracker.png";
 import equipmentBookingPlatformThumbnail from "../assets/project-thumbnail/equipment-booking.png";
 import bookingCleaningServicesThumbnail from "../assets/project-thumbnail/cleaning-services.png";
 import localSnackSubscriptionDeliveryThumbnail from "../assets/project-thumbnail/snack-subscription.png";
@@ -649,6 +649,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://repairlogix.free.nf/",
       type: "Client",
+      thumbnail: gadgetRepairTrackerThumbnail,
     },
     {
       id: 54,
@@ -659,6 +660,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://gearrentalHub.free.nf/",
       type: "Client",
+      thumbnail: equipmentBookingPlatformThumbnail,
     },
     {
       id: 55,
@@ -669,6 +671,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://broomboom.free.nf/",
       type: "Client",
+      thumbnail: bookingCleaningServicesThumbnail,
     },
     {
       id: 56,
@@ -679,6 +682,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://snackcycle.free.nf/",
       type: "Client",
+      thumbnail: localSnackSubscriptionDeliveryThumbnail,
     },
     {
       id: 57,
