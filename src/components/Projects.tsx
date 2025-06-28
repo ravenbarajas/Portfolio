@@ -685,13 +685,12 @@ const Projects = () => {
       type: "Client",
       thumbnail: localSnackSubscriptionDeliveryThumbnail,
     },
-    // Technology tags to be updated //
     {
       id: 57,
       title: "Shoe Repair & Customization Booking",
       description: "A booking platform for shoe repair services.",
       details: "Schedule appointments for shoe repair and customization, offering various service options and a gallery for custom designs.",      
-      technologies: ["ReactJS", "TypeScript", "ExpressJS", "ExpressJS", "PostgreSQL"],
+      technologies: ["ReactJS", "TypeScript", "Tailwind", "FastAPI", "PostgreSQL"],
       category: "Web Apps",
       link: "http://shoesavvy.free.nf/",
       type: "Client",
@@ -702,7 +701,7 @@ const Projects = () => {
       title: "Water Refill Delivery Tracker",
       description: "A tracking system for water refill deliveries.",
       details: "Provides updates on water refill orders, enabling customers to track their delivery status and subscriptions efficiently.",      
-      technologies: ["ReactJS", "TypeScript", "ExpressJS", "ExpressJS", "PostgreSQL"],
+      technologies: ["ReactJS", "TypeScript", "Tailwind", "FastAPI", "PostgreSQL"],
       category: "Web Apps",
       link: "http://freshfix.free.nf/",
       type: "Client",
