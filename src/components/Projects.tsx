@@ -58,6 +58,8 @@ import gadgetRepairTrackerThumbnail from "../assets/project-thumbnail/repair-tra
 import equipmentBookingPlatformThumbnail from "../assets/project-thumbnail/equipment-booking.png";
 import bookingCleaningServicesThumbnail from "../assets/project-thumbnail/cleaning-services.png";
 import localSnackSubscriptionDeliveryThumbnail from "../assets/project-thumbnail/snack-subscription.png";
+import shoeRepairCustomizationBookingThumbnail from "../assets/project-thumbnail/shoe-repair.png";
+import waterRefillDeliveryTrackerThumbnail from "../assets/project-thumbnail/water-refill.png";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -693,6 +695,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://shoesavvy.free.nf/",
       type: "Client",
+      thumbnail: shoeRepairCustomizationBookingThumbnail,
     },
     {
       id: 58,
@@ -703,6 +706,7 @@ const Projects = () => {
       category: "Web Apps",
       link: "http://freshfix.free.nf/",
       type: "Client",
+      thumbnail: waterRefillDeliveryTrackerThumbnail,
     },
   ];
 
